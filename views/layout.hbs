@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{title}}</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
@@ -22,20 +23,32 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav ml-auto">
+        {{#unless user}}
         <li class="nav-item">
-          <a class="nav-link" href="/">Inicio</a>
+          <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login">Iniciar sesión</a>
+          <a class="nav-link" href="/login">Log In</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/signup">Registro</a>
+          <a class="nav-link" href="/signup">Sign In</a>
+        </li>
+        {{/unless}}
+        {{#if user}}
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Cerrar sesión</a>
+          <a class="nav-link" href="/profile">Profile</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Log Out</a>
+        </li>
+        {{/if}}
       </ul>
+
     </div>
   </nav>
 
