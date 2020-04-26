@@ -37,14 +37,13 @@ router.post("/signup",
         }
 
         const { username, password, email } = req.body
-        const { filename } = req.file.url
+        const filename = req.file.url
         let confirmationCode = token
 
         if (!username || !password) {
             res.render("auth/signup", { errorMsg: "Please enter you username and password" })
             return
         }
-
         User.findOne({ username })
             .then(user => {
                 if (user) {
@@ -61,6 +60,7 @@ router.post("/signup",
                     password: hashPass,
                     confirmationCode
                 })
+
                     .then(() => {
                         let message = 'test message'
                         mailer.sendMail({

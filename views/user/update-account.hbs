@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-md-6">
+
+        <h2>YOUR ACCOUNT</h2>
+
+        <form action="/profile/update" method="POST" enctype="multipart/form-data">
+        <img src="{{user.photoURL}}" alt="my picture" height="42" width="42">
+            <div class="form-group">
+                <input type="file" name="photo">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">User Name</label>
+                <input name="username" value="{{username}}" type="text" class="form-control" id="field1" placeholder="User Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Email Address</label>
+                <input name="email" value="{{email}}" type="text" class="form-control" id="field2" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="password" value="{{password}}"type="password" class="form-control" id="field3" placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-dark btn-block btn-lg">DONE</button>
+
+            {{#if errorMsg}}
+            <div id="errorMsg">{{{errorMsg}}}</div>
+            {{/if}}
+        </form>
+    </div>
+</div>
