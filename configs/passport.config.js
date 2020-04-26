@@ -6,12 +6,16 @@ const flash = require("connect-flash")
 
 const User = require('../models/user.model')
 
+const MongoStore = require('connect-mongo')(session);
+const mongoose = require('mongoose');
+
 module.exports = app => {
 
     app.use(session({
-        secret: "passport-app-webmad0320",
+        secret: "marvelApp",
         resave: true,
-        saveUninitialized: true
+        saveUninitialized: true,
+        store: new MongoStore({ mongooseConnection: mongoose.connection })
     }))
 
     passport.serializeUser((user, next) => next(null, user._id))
@@ -21,18 +25,16 @@ module.exports = app => {
             .catch(err => next(err))
     })
 
-
-
     app.use(flash())
 
     passport.use(new LocalStrategy({ passReqToCallback: true }, (req, username, password, next) => {
         User.findOne({ username })
             .then(user => {
                 if (!user) {
-                    return next(null, false, { message: "Nombre de usuario incorrecto" })
+                    return next(null, false, { message: "Incorrect username" })
                 }
                 if (!bcrypt.compareSync(password, user.password)) {
-                    return next(null, false, { message: "Contraseña incorrecta" })
+                    return next(null, false, { message: "Incorrect password" })
                 }
                 return next(null, user)
             })
