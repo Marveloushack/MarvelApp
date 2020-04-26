@@ -8,4 +8,8 @@ class apiHandler {
   getCharacter(name) {
     return axios.get(this.BASE_URL + "/characters?name=" + name + "&ts=1561464418685&apikey=" + this.apiKey + "&hash=" + this.hash);
   }
+  getCharDetails(id) {
+    return axios.get(this.BASE_URL + "/characters/" + id + "&ts=1561464418685&apikey=" + this.apiKey + "&hash=" + this.hash);
+  }
 }
+
