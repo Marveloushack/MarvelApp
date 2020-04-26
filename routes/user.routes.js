@@ -30,8 +30,6 @@ router.post('/profile/update', ensureLoggedIn(), uploadCloud.single('photo'), (r
     const { _id } = req.user
     const { username, email } = req.body
     console.log('BODY', req.file)
-
-
     const tempUsername = username || req.user.username;
     const tempEmail = email || req.user.email;
     const tempURL = req.file ? req.file.url : req.user.photoURL;
