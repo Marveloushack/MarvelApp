@@ -91,7 +91,7 @@ router.get('/auth/confirm/:confirmCode', (req, res, next) => {
 })
 
 // User login
-router.get('/login', ensureLoggedOut('/login'), (req, res) => res.render('auth/login', { "errorMsg": req.flash("error") }))
+router.get('/login', ensureLoggedOut(), (req, res) => res.render('auth/login', { "errorMsg": req.flash("error") }))
 
 router.post('/login', ensureLoggedOut(), passport.authenticate("local", {
     successRedirect: "/",
@@ -103,7 +103,7 @@ router.post('/login', ensureLoggedOut(), passport.authenticate("local", {
 
 
 // User logout
-router.get("/logout", ensureLoggedIn('/login'), (req, res) => {
+router.get("/logout", ensureLoggedIn(), (req, res) => {
     req.logout()
     res.redirect("/")
 })

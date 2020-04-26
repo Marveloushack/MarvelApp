@@ -15,7 +15,7 @@ const uploadCloud = require('../configs/cloudinary.config.js');
 
 // User Profile
 
-router.get('/profile', ensureLoggedIn('/login'), (req, res) => {
+router.get('/profile', ensureLoggedIn(), (req, res) => {
     res.render('user/profile', { message: req.flash('error') });
 });
 
