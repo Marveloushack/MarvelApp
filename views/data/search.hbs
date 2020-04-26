@@ -1,0 +1,24 @@
+<form>
+    <div class="form-group">
+        <label for="character-name">Search character</label>
+        <input type="text" class="character-name" name="character-name" id="autoComplete" placeholder="Character name">
+    </div>
+   <div>
+       <button id="fetch">Search</button>
+   </div>
+</form>
+<article class="display-info">
+<div class="card" style="width: 20rem;">
+    <img class="char-img" src="" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="char-name">Card title</h5>
+        <p class="char-description">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        <a href="#" class="button2">Add to Favorites</a>
+        <a href="/details/{{id}}" class="button2" id="details">See Details</a>
+    </div>
+</div>
+</article>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="../../javascripts/apiHandler.js"></script>
+<script type="text/javascript" src="../../javascripts/apiQuery.js"></script>

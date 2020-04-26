@@ -24,6 +24,7 @@ app.use(userLocals);
 // Base URLS
 app.use('/', require('./routes/index.routes'))
 app.use('/', require('./routes/auth.routes'))
+app.use('/', require("./routes/data.routes"));
 app.use('/', require('./routes/user.routes'))
 
 
