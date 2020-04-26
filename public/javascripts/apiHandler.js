@@ -12,4 +12,3 @@ class apiHandler {
     return axios.get(this.BASE_URL + "/characters/" + id + "&ts=1561464418685&apikey=" + this.apiKey + "&hash=" + this.hash);
   }
 }
-
