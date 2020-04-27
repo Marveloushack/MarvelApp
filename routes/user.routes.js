@@ -42,4 +42,10 @@ router.post('/profile/update', ensureLoggedIn(), uploadCloud.single('photo'), (r
         .catch(err => next(err))
 })
 
+
+
+// My Comics
+
+router.get("/myComics", (req, res) => res.render("user/myComics"));
+
 module.exports = router
