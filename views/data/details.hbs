@@ -1,6 +1,76 @@
-<h1>Detalles</h1>
+{{#each character}}
+<h1>Detalles de {{name}}</h1>
+
+<div class="col-md-2">
+    <img id="char" class="card-img" src="{{thumbnail.path}}.jpg">
+</div>
+<div class="col-md-8">
+    <article class="card">
+        <div class="card-body">
+            <h3 class="card-title"><strong>Name:</strong> {{name}}</h3>
+            <p class="description"><strong>Description:</strong> {{description}}</p>
+        </div>
+    </article>
+</div>
+{{/each}}
+<div class="container">
+    <h3>Comics</h3>
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                {{#each comics}}
+                <li class="glide__slide">
+                    <img src="{{thumbnail.path}}.jpg">
+                    {{title}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>Events</h3>
+    <div class="glide2">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                {{#each events}}
+                <li class="glide__slide">
+                    <img src="{{thumbnail.path}}.jpg">
+                    {{title}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>Stories</h3>
+    <div class="glide3">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                {{#each series}}
+                <li class="glide__slide">
+                    <img src="{{thumbnail.path}}.jpg">
+                    {{title}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
 
 
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script type="text/javascript" src="../../javascripts/apiHandler.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+    const config = {
+        type: 'carousel',
+        focusAt: 'center',
+        perView: 3,
+        gap: 20
+    }
+    new Glide('.glide', config).mount()
+    new Glide('.glide2', config).mount()
+    new Glide('.glide3', config).mount()
+</script>

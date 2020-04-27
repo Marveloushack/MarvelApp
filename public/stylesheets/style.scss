@@ -1,3 +1,7 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+
 body {
   font-weight: 200;
   font-family: sans-serif;
@@ -12,6 +16,7 @@ h3 {
 .navbar {
   margin-bottom: 70px;
 }
+
 .home {
   margin: 0;
   padding: 0;
@@ -67,6 +72,7 @@ a.button1 {
   text-align: center;
   transition: all 0.2s;
 }
+
 a.button2 {
   display: inline-block;
   padding: 0.35em 1.2em;
@@ -86,12 +92,28 @@ a.button1:hover {
   color: white;
   background-color: red;
 }
+
 a.button2:hover {
   color: white;
   background-color: red;
 }
-.card img{
-  object-fit: contain;
 
+.card img {
+  object-fit: contain;
   width: 100%;
+}
+.glide img{
+  object-fit: contain;
+  width: 100%;
+}
+.glide2 img {
+  object-fit: contain;
+  width: 100%;
+}
+.glide3 img {
+  object-fit: contain;
+  width: 100%;
+}
+.container {
+  height: 100vh;
 }
