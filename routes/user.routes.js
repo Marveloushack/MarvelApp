@@ -48,4 +48,13 @@ router.post('/profile/update', ensureLoggedIn(), uploadCloud.single('photo'), (r
 
 router.get("/myComics", (req, res) => res.render("user/myComics"));
 
+
+//POST
+
+
+router.post('/user/characters', ensureLoggedIn(), (req, res, next) => {
+    let { character_favorites } = req.body
+    console.log('RUTA POST', character_favorites)
+})
+
 module.exports = router

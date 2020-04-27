@@ -10,6 +10,10 @@ class comicsApi {
         this.axiosAPI = axios.create({
             baseURL: "https://gateway.marvel.com:443"
         })
+
+        this.axiosServer = axios.create({
+            baseURL: "http://localhost:3000"
+        })
     }
 
     getAllCharacters() {
@@ -26,10 +30,11 @@ class comicsApi {
         })
     }
 
-    postCharaterInfo() {
-        return this.axiosAPI.post("user/characters", characterInfo)
+    postCharaterInfo(characterInfo) {
+        return this.axiosServer.post("/user/characters", {
+            character_favorites: characterInfo
+        })
     }
-
 
     getAllComics() {
         return this.axiosAPI.get('/v1/public/comics', {
@@ -76,10 +81,6 @@ class comicsApi {
             }
         })
     }
-
-
-
-
 
     getComicId(id) {
         return this.axiosAPI.get(`/v1/public/comics/${id}`, {

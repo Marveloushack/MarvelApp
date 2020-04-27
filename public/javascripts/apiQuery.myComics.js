@@ -31,6 +31,10 @@ window.addEventListener('load', () => {
                         input.value = item.label;
                         characters_favorites.push(input.value)
                         console.log(characters_favorites)
+
+                        const containerPref = document.querySelector('.character-preferences')
+                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value}</button>`
+
                     }
 
                 });
@@ -38,13 +42,12 @@ window.addEventListener('load', () => {
             .catch(error => console.log('oOh No! Error is: ', error))
     })
 
-    // document.getElementById("user-Character").onsubmit = function (event) {
-    //     event.preventDefault();
-    //     ComicsAPI.postCharaterInfo()
-    //         .then(userCharacters => { 
-    //             character_favorites
-    //         })
 
+    document.getElementById("safeButton").addEventListener('click', function (event) {
+        event.preventDefault()
+        ComicsAPI.postCharaterInfo(characters_favorites)
+        console.log("ENTRO")
+    })
 
     document.getElementById('theButton-comics').addEventListener('click', function (event) {
         event.preventDefault()
@@ -72,6 +75,8 @@ window.addEventListener('load', () => {
                         input.value = item.label;
                         comics_favorites.push(input.value)
                         console.log(comics_favorites)
+                        const containerPref = document.querySelector('.comics-preferences')
+                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value} X </button> `
                     }
                 });
             })
@@ -104,6 +109,8 @@ window.addEventListener('load', () => {
                         input.value = item.label;
                         series_favorites.push(input.value)
                         console.log(series_favorites)
+                        const containerPref = document.querySelector('series-preferences')
+                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value} X </button> `
                     }
                 });
             })

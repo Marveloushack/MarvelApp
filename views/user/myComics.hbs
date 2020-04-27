@@ -1,15 +1,13 @@
-<div class="hero_my_comics">
-
-</div>
 <div class="container">
-    <div id="comics_title">
-        <h1>My Comics</h1>
+    <div class="hero_my_comics">
+        <div id="comics_title">
+            My Comics
+        </div>
+        <div class="button">
+            <a href="/profile" id="user-Character" class="button2">Back</a>
+            <a href="/" id="user-Character" class="button2">Go Home</a>
+        </div>
     </div>
-    <div class="button">
-        <a href="something" id="user-Character" class="button1">Save</a>
-    </div>
-
-
     <section>
         <div class="btn-group" id="buttons_comics" role="group" aria-label="Basic example">
             <button id="theButton" type="button" class="btn btn-secondary">Characters</button>
@@ -19,20 +17,35 @@
     </section>
     <section>
         <div class="textInput">
-            <div>
-                <input id="theInput-character" class="form-control" type="text"
-                    placeholder="Search your favorite character">
-            </div>
-            <div>
-                <input id="theInput-comics" class="form-control" type="text" placeholder="Search your favorite comic">
-            </div>
-            <div>
-                <input id="theInput-series" class="form-control" type="text" placeholder="Search your favorite serie">
-            </div>
+            <input id="theInput-character" class="form-control" type="text"
+                placeholder="Search your favorite character">
+            <input id="theInput-comics" class="form-control" type="text" placeholder="Search your favorite comic">
+            <input id="theInput-series" class="form-control" type="text" placeholder="Search your favorite serie">
+        </div>
+    </section>
+    <section>
+        <div class="character-preferences">
+            <br>
+            <h3>Selected characteres:</h3>
+            <hr>
+            <br>
+            {{!-- <button type="button" class="btn btn-outline-danger"></button> --}}
+        </div>
+        <div class="comics-preferences">
+            <br>
+            <h3>Selected comics:</h3>
+            <hr><br>
+        </div>
+        <div class="series-preferences">
+            <br>
+            <h3>Selected series:</h3>
+            <hr><br>
         </div>
     </section>
 
+    <button id="safeButton" type="button" class="btn btn-dark">Save</button>
 </div>
+
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>
 <script type="text/javascript" src="../../javascripts/api.js"></script>
