@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
                         console.log(characters_favorites)
 
                         const containerPref = document.querySelector('.character-preferences')
-                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value}</button>`
+                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value} </button>`
 
                     }
 
@@ -42,11 +42,9 @@ window.addEventListener('load', () => {
             .catch(error => console.log('oOh No! Error is: ', error))
     })
 
-
     document.getElementById("safeButton").addEventListener('click', function (event) {
         event.preventDefault()
         ComicsAPI.postCharaterInfo(characters_favorites)
-        console.log("ENTRO")
     })
 
     document.getElementById('theButton-comics').addEventListener('click', function (event) {
@@ -76,11 +74,17 @@ window.addEventListener('load', () => {
                         comics_favorites.push(input.value)
                         console.log(comics_favorites)
                         const containerPref = document.querySelector('.comics-preferences')
-                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value} X </button> `
+                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value} </button> `
                     }
                 });
             })
             .catch(error => console.log('oOh No! Error is: ', error))
+    })
+
+
+    document.getElementById("safeButton").addEventListener('click', function (event) {
+        event.preventDefault()
+        ComicsAPI.postComicsInfo(comics_favorites)
     })
 
     document.getElementById('theButton-series').addEventListener('click', function (event) {
@@ -109,12 +113,17 @@ window.addEventListener('load', () => {
                         input.value = item.label;
                         series_favorites.push(input.value)
                         console.log(series_favorites)
-                        const containerPref = document.querySelector('series-preferences')
-                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value} X </button> `
+                        const containerPref = document.querySelector('.series-preferences')
+                        containerPref.innerHTML += `<button type="button" class="btn btn-outline-danger">${input.value}  </button> `
                     }
                 });
             })
             .catch(error => console.log('oOh No! Error is: ', error))
+    })
+
+    document.getElementById("safeButton").addEventListener('click', function (event) {
+        event.preventDefault()
+        ComicsAPI.postSeriesInfo(series_favorites)
     })
 
 

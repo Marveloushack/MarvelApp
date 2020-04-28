@@ -36,6 +36,18 @@ class comicsApi {
         })
     }
 
+    postComicsInfo(comicsInfo) {
+        return this.axiosServer.post("/user/comics", {
+            comics_favorites: comicsInfo
+        })
+    }
+
+    postSeriesInfo(seriesInfo) {
+        return this.axiosServer.post("/user/series", {
+            series_favorites: seriesInfo
+        })
+    }
+
     getAllComics() {
         return this.axiosAPI.get('/v1/public/comics', {
             params: {

@@ -50,11 +50,56 @@ router.get("/myComics", (req, res) => res.render("user/myComics"));
 
 
 //POST
-
-
 router.post('/user/characters', ensureLoggedIn(), (req, res, next) => {
+    const { _id } = req.user
     let { character_favorites } = req.body
-    console.log('RUTA POST', character_favorites)
+    console.log('CHARACTER', character_favorites)
+    //tempColletion = req.user.character_favorites 
+    console.log('FAVORITES', req.user.character_favorites)
+    //let tempColletion = [...req.user.character_favorites]
+    //tempColletion.push(character_favorites)
+    //console.log('COLLECTION', tempColletion)
+
+    User.findByIdAndUpdate({ _id }, { character_favorites: character_favorites })
+        .then(updateUser => {
+            console.log(updateUser)
+        })
+        .catch(err => next(err))
 })
+
+router.post('/user/comics', ensureLoggedIn(), (req, res, next) => {
+    const { _id } = req.user
+    let { comics_favorites } = req.body
+    console.log('CHARACTER', comics_favorites)
+    console.log('FAVORITES', req.user.comics_favorites)
+
+    User.findByIdAndUpdate({ _id }, { comics_favorites: comics_favorites })
+        .then(updateUser => {
+            console.log(updateUser)
+        })
+        .catch(err => next(err))
+})
+
+router.post('/user/series', ensureLoggedIn(), (req, res, next) => {
+    const { _id } = req.user
+    let { series_favorites } = req.body
+    console.log('CHARACTER', series_favorites)
+    console.log('FAVORITES', req.user.series_favorites)
+
+    User.findByIdAndUpdate({ _id }, { series_favorites: series_favorites })
+        .then(updateUser => {
+            console.log(updateUser)
+        })
+        .catch(err => next(err))
+})
+
+
+
+
+
+
+
+
+
 
 module.exports = router

@@ -10,7 +10,7 @@ const userSchema = new Schema({
     confirmationCode: { type: Schema.Types.Mixed, unique: true },
     character_favorites: [String],
     comics_favorites: [String],
-    serie_favorites: [String],
+    series_favorites: [String],
 }, {
     timestamps: true
 })

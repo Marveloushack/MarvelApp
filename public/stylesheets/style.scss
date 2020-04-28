@@ -123,7 +123,7 @@ a.button2:hover {
 #buttons_comics{
   height: 50px;
   width: 60px;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 .textInput{
@@ -134,6 +134,13 @@ a.button2:hover {
   margin-bottom: 10px;
   background: white;
 }
+
+.autocomplete > div:hover:not(.group),
+.autocomplete > div.selected {
+    background: #8080807a;
+    cursor: pointer;
+}
+
 
 #user-Character{
   width: 200px;
@@ -150,4 +157,12 @@ a.button2:hover {
   margin-top: 50px;
 }
 
+#safeButton{
+  height: 50px;
+  width: 160px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: block;
+  margin: auto ;
+}
 
