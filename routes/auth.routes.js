@@ -37,6 +37,10 @@ router.post("/signup",
         }
 
         const { username, password, email } = req.body
+        const location = {
+          type: "Point",
+          coordinates: [req.body.lat, req.body.long],
+        };
         const filename = req.file.url
         let confirmationCode = token
 

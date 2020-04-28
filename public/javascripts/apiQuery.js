@@ -7,9 +7,8 @@ document.getElementById('fetch').addEventListener('click', function (event) {
         .getCharacter(charName)
         .then(responseFromApi => {
             const charInfo = responseFromApi.data.data.results[0];
-            console.log(responseFromApi.data.data);
-            document.querySelector(".char-img").src = charInfo.thumbnail.path + ".jpg";
-            document.querySelector(".character-name").innerHTML = charInfo.name;
+            console.log(charInfo);
+            document.querySelector(".char-name").innerHTML = charInfo.name;
             document.querySelector(".char-description").innerHTML = charInfo.description;
             document.querySelector(".char-comics").innerHTML = charInfo.comics.items[0].name;
             document.querySelector("#details").href = "/details/" + charInfo.id
