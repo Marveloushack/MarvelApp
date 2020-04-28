@@ -42,8 +42,6 @@ router.post('/profile/update', ensureLoggedIn(), uploadCloud.single('photo'), (r
         .catch(err => next(err))
 })
 
-
-
 // My Comics
 
 router.get("/myComics", (req, res) => res.render("user/myComics"));
@@ -53,14 +51,9 @@ router.get("/myComics", (req, res) => res.render("user/myComics"));
 router.post('/user/characters', ensureLoggedIn(), (req, res, next) => {
     const { _id } = req.user
     let { character_favorites } = req.body
-    console.log('CHARACTER', character_favorites)
-    //tempColletion = req.user.character_favorites 
-    console.log('FAVORITES', req.user.character_favorites)
-    //let tempColletion = [...req.user.character_favorites]
-    //tempColletion.push(character_favorites)
-    //console.log('COLLECTION', tempColletion)
+    let tempColletion = [...req.user.character_favorites, ...character_favorites]
 
-    User.findByIdAndUpdate({ _id }, { character_favorites: character_favorites })
+    User.findByIdAndUpdate({ _id }, { character_favorites: tempColletion })
         .then(updateUser => {
             console.log(updateUser)
         })
@@ -70,10 +63,9 @@ router.post('/user/characters', ensureLoggedIn(), (req, res, next) => {
 router.post('/user/comics', ensureLoggedIn(), (req, res, next) => {
     const { _id } = req.user
     let { comics_favorites } = req.body
-    console.log('CHARACTER', comics_favorites)
-    console.log('FAVORITES', req.user.comics_favorites)
+    let tempColletion = [...req.user.comics_favorites, ...comics_favorites]
 
-    User.findByIdAndUpdate({ _id }, { comics_favorites: comics_favorites })
+    User.findByIdAndUpdate({ _id }, { comics_favorites: tempColletion })
         .then(updateUser => {
             console.log(updateUser)
         })
@@ -83,10 +75,9 @@ router.post('/user/comics', ensureLoggedIn(), (req, res, next) => {
 router.post('/user/series', ensureLoggedIn(), (req, res, next) => {
     const { _id } = req.user
     let { series_favorites } = req.body
-    console.log('CHARACTER', series_favorites)
-    console.log('FAVORITES', req.user.series_favorites)
+    let tempColletion = [...req.user.series_favorites, ...series_favorites]
 
-    User.findByIdAndUpdate({ _id }, { series_favorites: series_favorites })
+    User.findByIdAndUpdate({ _id }, { series_favorites: tempColletion })
         .then(updateUser => {
             console.log(updateUser)
         })

@@ -24,16 +24,32 @@
                     <dd>{{user.username}}</dd>
                     <dt>E-MAIL ADDRESS:</dt>
                     <dd>{{user.email}}</dd>
-                    {{!-- {{#if message1}}
+                    <dt>ADDRESS:</dt>
+                    <dd>****</dd>
+                </dl>
+                {{!-- {{#if message1}}
             <div id="message1">{{{message1}}}</div>
             {{/if}} --}}
-                    <p>Please check your inbox for confimation email Click the link in the email to verify your account
-                    </p>
-                </dl>
+                <p>Please check your inbox for confimation email Click the link in the email to verify your account
+                </p>
+
 
                 <a href="/profile/update" class="btn btn-danger" role="button" aria-pressed="true">UPDATE ACCOUNT</a>
             </div>
+            <hr>
 
+
+            <h3>PREFERENCES | Characters | Comics | Series </h3>
+            <hr>
+            <div>
+                <dl>
+                    <dt>MY FAVORITES:</dt>
+                    <dd> <strong> Characters: </strong> {{user.character_favorites}}</dd>
+                    <dd> <strong>Comics: </strong> {{user.comics_favorites}}</dd>
+                    <dd> <strong>Favorites: </strong> {{user.series_favorites}}</dd>
+                </dl>
+                <a href="/myComics" class="btn btn-danger" role="button" aria-pressed="true">UPDATE MY FAVORITES</a>
+            </div>
         </div>
     </div>
 </div>
