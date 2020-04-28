@@ -1,17 +1,21 @@
-const mongoose = require("mongoose")
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const userSchema = new Schema(
+  {
     photoURL: String,
     username: String,
     email: String,
     password: String,
     status: { type: String, enum: ["Pending Confirmation", "Active"], default: "Pending Confirmation" },
     confirmationCode: { type: Schema.Types.Mixed, unique: true },
-}, {
-    timestamps: true
-})
+    location: { type: { type: String }, coordinates: [Number] },
+  },
+  {
+    timestamps: true,
+  }
+);
+userSchema.index({ location: "2dsphere" });
+const User = mongoose.model("User", userSchema);
 
-const User = mongoose.model("User", userSchema)
-
-module.exports = User
+module.exports = User;
