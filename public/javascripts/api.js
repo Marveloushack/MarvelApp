@@ -19,6 +19,7 @@ class comicsApi {
     getAllCharacters() {
         return this.axiosAPI.get(`/v1/public/characters`, {
             params: {
+                limit: 100,
                 ts: 1,
                 apikey: "85c8538a62118493c2d1e4338ea2123d",
                 hash: "4c84cd0092ff9166501a8991fded25b7"
@@ -51,6 +52,7 @@ class comicsApi {
     getAllComics() {
         return this.axiosAPI.get('/v1/public/comics', {
             params: {
+                limit: 100,
                 ts: 1,
                 apikey: "85c8538a62118493c2d1e4338ea2123d",
                 hash: "4c84cd0092ff9166501a8991fded25b7"
@@ -61,11 +63,46 @@ class comicsApi {
             }
         })
     }
+
+    getAllComicsbyRange(characters) {
+        return this.axiosAPI.get('/v1/public/comics', {
+            params: {
+                limit: 100,
+                dateRange: "2015-01-01,2020-01-01",
+                ts: 1,
+                apikey: "85c8538a62118493c2d1e4338ea2123d",
+                hash: "4c84cd0092ff9166501a8991fded25b7"
+
+                // ts: apiConfig.ts,
+                // hash: apiConfig.hash,
+                // apikey: apiConfig.apikey
+            }
+        })
+    }
+
+    getAllComicsbycharacter() {
+        return this.axiosAPI.get('/v1/public/comics', {
+            params: {
+                limit: 100,
+                dateRange: "2015-01-01,2020-01-01",
+                ts: 1,
+                apikey: "85c8538a62118493c2d1e4338ea2123d",
+                hash: "4c84cd0092ff9166501a8991fded25b7"
+
+                // ts: apiConfig.ts,
+                // hash: apiConfig.hash,
+                // apikey: apiConfig.apikey
+            }
+        })
+    }
+
+
 
 
     getAllSeries() {
         return this.axiosAPI.get('/v1/public/series', {
             params: {
+                limit: 100,
                 ts: 1,
                 apikey: "85c8538a62118493c2d1e4338ea2123d",
                 hash: "4c84cd0092ff9166501a8991fded25b7"
@@ -77,12 +114,25 @@ class comicsApi {
         })
     }
 
-
-
     getCharacter(name) {
         return this.axiosAPI.get(`/v1/public/characters`, {
             params: {
                 name,
+                ts: 1,
+                apikey: "85c8538a62118493c2d1e4338ea2123d",
+                hash: "4c84cd0092ff9166501a8991fded25b7"
+
+                // ts: apiConfig.ts,
+                // hash: apiConfig.hash,
+                // apikey: apiConfig.apikey
+            }
+        })
+    }
+
+    getComics(title) {
+        return this.axiosAPI.get(`/v1/public/comics`, {
+            params: {
+                title,
                 ts: 1,
                 apikey: "85c8538a62118493c2d1e4338ea2123d",
                 hash: "4c84cd0092ff9166501a8991fded25b7"

@@ -198,6 +198,28 @@ a.button2:hover {
 }
 
 //CHARTS
+
+#charts{
+  background:#151515;
+  font-family: 'Poppins', monospace;
+  color: white;
+  font-size: .7em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  padding: 60px;
+}
+
+figure {
+    background-color: rgba(255,255,255,.05);
+    padding: 10px 10px 30px;
+}
+canvas {
+    width: 100%;
+}
+
+
+
 // .loading {
 //     position: absolute;
 //     border: none;

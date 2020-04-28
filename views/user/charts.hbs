@@ -1,28 +1,53 @@
-<main>
-    <h1>My comic charts</h1>
+<div class="container-fluid" id="charts">
 
+    <main>
+        <h1>My comic charts</h1>
 
+        <div class="row">
+            <div class="col-6">
+                <input id="theInput" class="form-control" type="text" placeholder="Search your favorite character">
+                <button id="theButton" type="button" class="btn btn-secondary">Search</button>
+                <section class="cols-2">
+                    <figure>
+                        <p>Check in how many resourses your character appears.</p>
+                        <h3>Characters</h3>
+                        <canvas id="chart1"></canvas>
+                    </figure>
+            </div>
+            <div class="col-6">
+                <input id="theInput2" class="form-control" type="text" placeholder="Search your favorite character">
+                <button id="theButton2" type="button" class="btn btn-secondary">Search</button>
+                <figure>
+                    <p>Chart 2</p>
+                    <h3>Main characters</h3>
+                    <canvas id="chart2"></canvas>
+                </figure>
+            </div>
+            </section>
+        </div>
+        <div class="row">
+            <div class="col-6">
 
-    <h2 class="loading">Esperando respuesta de la API...</h2>
-    <section class="chartSection">
-        <figure>
-            <p>Chart 1</p>
-            <h3>Characters</h3>
-            <canvas id="chart1"></canvas>
-        </figure>
+                <section class="cols-2">
+                    <figure>
+                        <p>Chart 1</p>
+                        <h3>Characters</h3>
+                        <canvas id="chart1"></canvas>
+                    </figure>
+            </div>
+            <div class="col-6">
+                <figure>
+                    <p>Chart 2</p>
+                    <h3>Main characters</h3>
+                    <canvas id="chart2"></canvas>
+                </figure>
+            </div>
+            </section>
+        </div>
+    </main>
 
-        <figure>
-            <p>Chart 2</p>
-            <h3>Main characters</h3>
-            <canvas id="chart2"></canvas>
-        </figure>
-    </section>
-
-</main>
-<input id="theInput" class="form-control" type="text" placeholder="Search your favorite character">
-
-<button id="theButton" type="button" class="btn btn-secondary">Characters</button>
-
+</div>
+</div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script type="text/javascript" src="../../javascripts/api.js"></script>

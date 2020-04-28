@@ -201,6 +201,29 @@ a.button2:hover {
   object-fit: contain;
   width: 100%; }
 
+.glide img {
+  object-fit: contain;
+  width: 100%; }
+
+.glide2 img {
+  object-fit: contain;
+  width: 100%; }
+
+.glide3 img {
+  object-fit: contain;
+  width: 100%; }
+
+.container {
+  height: 100vh; }
+
+#librariesmap {
+  height: 500px;
+  width: 100%; }
+
+#socialmap {
+  height: 500px;
+  width: 100%; }
+
 .hero_my_comics {
   width: 100%;
   height: 400px;
@@ -256,27 +279,22 @@ input {
   margin-bottom: 50px;
   display: block;
   margin: auto; }
-.glide img {
-  object-fit: contain;
-  width: 100%; }
 
-.glide2 img {
-  object-fit: contain;
-  width: 100%; }
+#charts {
+  background: #151515;
+  font-family: 'Poppins', monospace;
+  color: white;
+  font-size: .7em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  padding: 60px; }
 
-.glide3 img {
-  object-fit: contain;
-  width: 100%; }
+figure {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px 10px 30px; }
 
-.container {
-  height: 100vh; }
-
-#librariesmap {
-  height: 500px;
-  width: 100%; }
-
-#socialmap {
-  height: 500px;
+canvas {
   width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
