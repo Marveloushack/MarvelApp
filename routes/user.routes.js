@@ -84,13 +84,9 @@ router.post('/user/series', ensureLoggedIn(), (req, res, next) => {
         .catch(err => next(err))
 })
 
+// Charts
 
-
-
-
-
-
-
+router.get("/charts", (req, res) => res.render("user/charts"));
 
 
 module.exports = router

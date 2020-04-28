@@ -8,6 +8,9 @@ const userSchema = new Schema({
     password: String,
     status: { type: String, enum: ["Pending Confirmation", "Active"], default: "Pending Confirmation" },
     confirmationCode: { type: Schema.Types.Mixed, unique: true },
+    location: {
+        type: { type: String }, coordinates: [Number]
+    },
     character_favorites: [String],
     comics_favorites: [String],
     series_favorites: [String],

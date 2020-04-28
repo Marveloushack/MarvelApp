@@ -8,6 +8,7 @@
   <title>{{title}}</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="https://kraaden.github.io/autocomplete/autocomplete.css">
   <link rel="stylesheet" href="/stylesheets/style.css" />
 
@@ -36,6 +37,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/signup">Sign In</a>
         </li>
+
         {{/unless}}
         {{#if user}}
         <li class="nav-item">
@@ -43,6 +45,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/charts">Charts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/logout">Log Out</a>
@@ -58,6 +63,8 @@
 
   <script src="/javascripts/script.js"></script>
   <script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>
+
+
 </body>
 
 </html>

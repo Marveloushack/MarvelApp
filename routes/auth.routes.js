@@ -40,6 +40,13 @@ router.post("/signup",
         const filename = req.file.url
         let confirmationCode = token
 
+// location
+        
+        let location = {
+            type: 'Point',
+            coordinates: [req.body.longitude, req.body.latitude]
+        }
+
         if (!username || !password) {
             res.render("auth/signup", { errorMsg: "Please enter you username and password" })
             return
@@ -58,7 +65,8 @@ router.post("/signup",
                     username,
                     email,
                     password: hashPass,
-                    confirmationCode
+                    confirmationCode,
+                    location
                 })
 
                     .then(() => {
