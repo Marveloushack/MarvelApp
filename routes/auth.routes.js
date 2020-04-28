@@ -37,6 +37,7 @@ router.post("/signup",
         }
 
         const { username, password, email } = req.body
+        const location = { type: "point", coordinates: [req.body.lat, req.body.long] };
         const filename = req.file.url
         let confirmationCode = token
 
@@ -57,6 +58,7 @@ router.post("/signup",
                     photoURL: filename,
                     username,
                     email,
+                    location : location,
                     password: hashPass,
                     confirmationCode
                 })

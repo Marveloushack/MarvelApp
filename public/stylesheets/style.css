@@ -214,4 +214,8 @@ a.button2:hover {
 .container {
   height: 100vh; }
 
+#myMap {
+  height: 500px;
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
