@@ -1,8 +1,8 @@
 let myMap = undefined;
 window.onload = () => {
   const placeCenter = {
-    lat: 40.391074,
-    lng: -3.701793,
+    lat: location.coordinates[0],
+    lng: location.coordinates[1],
   };
   let mapOptions = {
     zoom: 15,
