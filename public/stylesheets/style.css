@@ -214,7 +214,11 @@ a.button2:hover {
 .container {
   height: 100vh; }
 
-#myMap {
+#librariesmap {
+  height: 500px;
+  width: 100%; }
+
+#socialmap {
   height: 500px;
   width: 100%; }
 

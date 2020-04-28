@@ -1,0 +1,858 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CoQC_QAAAPnLqaopUMOfXLaIOW6ixugpYXacBwGGQmDNuVntCrXokQGMcTarx_dCEXXGDB7eigL2FRnk71oEqRb4_IeDhqgXgxjJ0cNgO9xoNqTz-XVu1JP-SRPrfEZtAVhuy1eZI-LWskDQXG2T1vFCmBFarGEJe-zrGJD4ltXoKopEjBZlnogfv3T9DzhuIsCMzyvnIzqsC9wSJf0PKUZO26FUT8yTm2U-u-_Gn28FSmE3T8ptxpc9yHQ77rw5UOwK90wolATWDd_4ZDQ20yMyA1-t5yyymO68okEQHHaICgOuIFr0VPZAQwuMs4obj4u6RClp9MDPcvlzq0Wyq4qmBGOacVsSEPvNOdFDP9pW6gjlSVW90cAaFFyF7gDWTE9Lv_x3Yaftp2yryX5Q",
+   "results" : [
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle de San Justo, 5, 28005 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4139961,
+               "lng" : -3.709748
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.41541302989273,
+                  "lng" : -3.708377420107278
+               },
+               "southwest" : {
+                  "lat" : 40.41271337010728,
+                  "lng" : -3.711077079892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "3eacb1dd84a61cdffd5d3b356e1f53b0c46d2384",
+         "name" : "Biblioteca Iván de Vargas",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 4288,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101343720401434093935\"\u003eGabriele Busnelli\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAYUkp04ovef029K9G3tyMgxV-S2g368seDegL-y1fB7p6TIReLYta3a-Yvtw-KyAJ6Oie1jpnKWm1QzShXJizAA9YS0O0HFLwITkEa9NLm_QXiqZZT-VKjV-YOkXccO1QEhCO9xpA67UQUjyA6gRz7J_cGhSLvWmBkust5k7nZciLDa4ZfE5dwA",
+               "width" : 3216
+            }
+         ],
+         "place_id" : "ChIJs4hi6ngoQg0RtaXGAqV_gZ0",
+         "plus_code" : {
+            "compound_code" : "C77R+H4 Madrid",
+            "global_code" : "8CGRC77R+H4"
+         },
+         "rating" : 4,
+         "reference" : "ChIJs4hi6ngoQg0RtaXGAqV_gZ0",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 112
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Cortada, 1, 28019 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.397829,
+               "lng" : -3.7200835
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.39922727989272,
+                  "lng" : -3.718703020107278
+               },
+               "southwest" : {
+                  "lat" : 40.39652762010728,
+                  "lng" : -3.721402679892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "fe9f282e10929ddad31335aad7c369739b4295b4",
+         "name" : "Biblioteca Pública Municipal Ana María Matute",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 2160,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112379513818678270868\"\u003eMiguel de la fuente\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAeS6U5n2YMLCKWPDqGPk_-jXeqET0XLtUP5bt5MNVausR_npUhZ2ndEQAYdU6b2M9OEJJGjia6ZgYFuMU-XL3mVjGlPz8WWNuBOQ2KGMh29PFJcnuWZy-wBV5nY9tG0oNEhAu47B5LTpQJmows30GlwyGGhQzOwoHBoLUA9wtbg2jjbp6qVYsyg",
+               "width" : 3840
+            }
+         ],
+         "place_id" : "ChIJsR18XcAnQg0RnBhf22nxWb8",
+         "plus_code" : {
+            "compound_code" : "97XH+4X Madrid",
+            "global_code" : "8CGR97XH+4X"
+         },
+         "rating" : 4.1,
+         "reference" : "ChIJsR18XcAnQg0RnBhf22nxWb8",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 106
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Barceló, 4, 28004 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4267129,
+               "lng" : -3.6993938
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.42814377989271,
+                  "lng" : -3.698093170107278
+               },
+               "southwest" : {
+                  "lat" : 40.42544412010727,
+                  "lng" : -3.700792829892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "cf0be98af43d6ee4afa52536fc7aa3a105234bf6",
+         "name" : "Biblioteca Mario Vargas Llosa",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 861,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115531577946421525453\"\u003eDavid Poza\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAhl-Jlzdsr4pEi092H8IehfywgLofdk5ScRyr08TCC9vdPDgsf5xUQ1AJluIx4AmSSPuS5O3gc2TzwGiP0qOdB8WuFPyYEmcyquxxF0zBWVHYOfSSiJk7_V0oWAu82ym-EhDccsad-PF3EtyNVg85OUPMGhTFrLmXGlxpCFGm7nA2d6V4fWC4hw",
+               "width" : 1148
+            }
+         ],
+         "place_id" : "ChIJNXrEQIkoQg0R-t2mZbyoHFU",
+         "plus_code" : {
+            "compound_code" : "C8G2+M6 Madrid",
+            "global_code" : "8CGRC8G2+M6"
+         },
+         "rating" : 3.3,
+         "reference" : "ChIJNXrEQIkoQg0R-t2mZbyoHFU",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 73
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle de Azcona, 42, 28028 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4343793,
+               "lng" : -3.6689465
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.43550937989273,
+                  "lng" : -3.667587870107278
+               },
+               "southwest" : {
+                  "lat" : 40.43280972010729,
+                  "lng" : -3.670287529892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "9bde09741de3da6d87ed416d8c16c9e1dc31f59d",
+         "name" : "Biblioteca Pública Manuel Alvar",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100824696388200225810\"\u003eA. M. C.\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAt3JMVesykLvOjrEDf5srA_e_Qe5QkI1t3zKgLuPDLMF_mL25y25PnMFB0tyKuV_ZdFgO9it5aq6UdHXOjJogGxXemTII7zHXi4XGcrb-NmaQ45yNtvlU3GcA3XutYUF7EhABQAOeGAy0-Vc140J5eJoNGhRmdeQ97PcFSHbyiMEQFknMNziu2A",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJCzJP38koQg0REAo0kUZMT4Q",
+         "plus_code" : {
+            "compound_code" : "C8MJ+QC Madrid",
+            "global_code" : "8CGRC8MJ+QC"
+         },
+         "rating" : 3.1,
+         "reference" : "ChIJCzJP38koQg0REAo0kUZMT4Q",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 224
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Calle de María de Molina, 31, 28006 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4378203,
+               "lng" : -3.682172
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.43910677989273,
+                  "lng" : -3.680984620107278
+               },
+               "southwest" : {
+                  "lat" : 40.43640712010728,
+                  "lng" : -3.683684279892721
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "df04a0acc775c4e4235ba17ba99a7895ac07a108",
+         "name" : "Biblioteca IE",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2808,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106792743394260795870\"\u003eBilioteca IE\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAZzq4c_zqQq4o4JcDhTluzb9UdvxHiqVsoxeRDkPVQ5AkNCJ8wrd3wsvcJC-GOV5og5WSxPogj9RvIhRYIkXQ-vRo9Z0_W6gGP_oNKebwWropl01_kkplCZvpUAupD_8UEhDRcfTYRjwGiwsDI4cosZf0GhS8MS-DqkEQO05Y-8MA9je9HpdtjQ",
+               "width" : 4212
+            }
+         ],
+         "place_id" : "ChIJdVXrmOkoQg0RSZv-g9ClBRE",
+         "plus_code" : {
+            "compound_code" : "C8Q9+44 Madrid",
+            "global_code" : "8CGRC8Q9+44"
+         },
+         "rating" : 2.9,
+         "reference" : "ChIJdVXrmOkoQg0RSZv-g9ClBRE",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 24
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Felipe el Hermoso, 4, 28010 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.435396,
+               "lng" : -3.6996247
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.43675072989272,
+                  "lng" : -3.698315720107279
+               },
+               "southwest" : {
+                  "lat" : 40.43405107010727,
+                  "lng" : -3.701015379892723
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "853d3a53767b27cd68d16e45f4f616fc44f7a89f",
+         "name" : "Biblioteca Publica José Luis Sampedro",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 4032,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100824696388200225810\"\u003eA. M. C.\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAIxfvK7Vnw7jcdfGTy9iPfLV0WAfdgBC5vJUW9j0MjJeNekkgGxgfAeJJfbZSg7O48Yu3qYz49hyGXh7N4AOKHmfNBkH68wDgogRF5DDs2D5c1mJa3B7QQtMwI9mZt7pcEhAP6Ml_Oyf_AUx3FOpd6OVaGhRDL7_lCjBgnfwrWzXv5eQLaNTLJQ",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJoSOZMXooQg0RvQFtzHkC-H8",
+         "plus_code" : {
+            "compound_code" : "C8P2+55 Madrid",
+            "global_code" : "8CGRC8P2+55"
+         },
+         "rating" : 3.5,
+         "reference" : "ChIJoSOZMXooQg0RvQFtzHkC-H8",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 106
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle de Argumosa, 3, 28012 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4085269,
+               "lng" : -3.7006555
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.40983002989272,
+                  "lng" : -3.699432370107279
+               },
+               "southwest" : {
+                  "lat" : 40.40713037010728,
+                  "lng" : -3.702132029892723
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "bc180187fb88fb40f84385b5487ad740761f1fab",
+         "name" : "Biblioteca de Humanidades UNED",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106505731823448011961\"\u003eMd Raju\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA1S82m1XZMv77UwFBUpyPXBSuYk_MKsvkPYGCjC3Z7rSIhBlIGdDuwH24UU3xwplcb82Y4XMEohpSqsxIxRqrtSZas5MbM2gyAJouy_w48jo7d8_iIt_DSygyUqkcvaQ3EhAmPkWpg9z3kXAo9QF0Sl18GhRJaORdvOOoWRlqHkcdhHW6zaNkXw",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJJcPlcCsmQg0R39ogRzOJCXk",
+         "plus_code" : {
+            "compound_code" : "C75X+CP Madrid",
+            "global_code" : "8CGRC75X+CP"
+         },
+         "rating" : 3.2,
+         "reference" : "ChIJJcPlcCsmQg0R39ogRzOJCXk",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 26
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Av. de los Toreros, 5, 28028 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4320302,
+               "lng" : -3.6707677
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.43330612989273,
+                  "lng" : -3.669403120107279
+               },
+               "southwest" : {
+                  "lat" : 40.43060647010728,
+                  "lng" : -3.672102779892723
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "17308d5397f9d1349966d5d036e340afdd9817c7",
+         "name" : "Biblioteca Pública Municipal Buenavista",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113722026912774206069\"\u003eJiyeon Oh\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAJGW3ommHvGXZUY24xqFInE4Ft7NdCEdUaEW3EsmZHLjocXMALn7H4j0NcZoOm7TSRMzcGC3STYZ6ZYEUpzhGzvSZFvMq1gQ20CrO6-pDl8dSOZ5dvIhJOEqKoE0B9FKqEhCpAp-Ue9qz3PWoUcRL7nZJGhReB3JJ9lvNG7LflZ2kfOKZ-g7wYw",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJIYFQobcoQg0RdeWz-rR-SF0",
+         "plus_code" : {
+            "compound_code" : "C8JH+RM Madrid",
+            "global_code" : "8CGRC8JH+RM"
+         },
+         "rating" : 3.3,
+         "reference" : "ChIJIYFQobcoQg0RdeWz-rR-SF0",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 44
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle del Dr. Esquerdo, 189, 28007 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4034753,
+               "lng" : -3.672219
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.40491337989273,
+                  "lng" : -3.671037220107278
+               },
+               "southwest" : {
+                  "lat" : 40.40221372010728,
+                  "lng" : -3.673736879892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "d304f9f143d36459e0ad8bbe57b74eab3064ee82",
+         "name" : "Biblioteca Pública Elena Fortún",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 1836,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112886630589042566746\"\u003eLuis Morato\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA0jCLh4lC5nik1aJjCBBDiOMyxmdPFY1z2LsMMNJyArfRePOj0jI6Ti6Rkqp51m6sD44h8LCFjEeXlVGgkATmAZR6GZth8V4geI7aviJUZoTLPXFHpKkfRCa0qUK1XwLiEhCpW_jVWRB12x-deXLUitvtGhRBLxyiJC2WBDnNZ5LAvq69HeVtdg",
+               "width" : 3264
+            }
+         ],
+         "place_id" : "ChIJ_9muqhomQg0RqDdvMOmUHGE",
+         "plus_code" : {
+            "compound_code" : "C83H+94 Madrid",
+            "global_code" : "8CGRC83H+94"
+         },
+         "rating" : 3.8,
+         "reference" : "ChIJ_9muqhomQg0RqDdvMOmUHGE",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 123
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle de Arganda, 12, 28005 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4002851,
+               "lng" : -3.7077763
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.40170877989272,
+                  "lng" : -3.706558920107278
+               },
+               "southwest" : {
+                  "lat" : 40.39900912010728,
+                  "lng" : -3.709258579892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "24b0735e9191c4fa4c807d203d621d4118f6e0d6",
+         "name" : "Biblioteca Pública Municipal Pío Baroja",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 862,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115531577946421525453\"\u003eDavid Poza\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAqo5Im0JKzaXdE8u-0xoR1uzza0-A_V1VMGxPFDwyJX1h05jWubh-Q7wiCPESECJBQ6a0WUlD__oE3cqUzETWlfCeiLGz3tsrQXRX94gNGFHU2wA91EkhdIccYXaWfCa2EhCWi2wb4Sg7cYFMqmf4DdrSGhTVcpTS9D2E0qWHiTZfetBahdhZew",
+               "width" : 862
+            }
+         ],
+         "place_id" : "ChIJ84ggec4nQg0RzHn17chhLUs",
+         "plus_code" : {
+            "compound_code" : "C72R+4V Madrid",
+            "global_code" : "8CGRC72R+4V"
+         },
+         "rating" : 3.7,
+         "reference" : "ChIJ84ggec4nQg0RzHn17chhLUs",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 37
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "formatted_address" : "Calle de Manuel Ferrero, 1, 28036 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.46745809999999,
+               "lng" : -3.6845998
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.46880672989271,
+                  "lng" : -3.683208320107278
+               },
+               "southwest" : {
+                  "lat" : 40.46610707010727,
+                  "lng" : -3.685907979892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "ce3917271dbbc15d176cc348b5a8b0910d1c7d0a",
+         "name" : "Biblioteca Pública Municipal Dámaso Alonso",
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118238853294615010050\"\u003eJorge Parral\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAv07VRfYlDwANChWIzVyq9mwrNsQre1pUOS0m8HEROBhIuBSGN0CNlRkMOkBHE0_R56FLicDv6jXyv9YqVVYwqlwhobwsR2Y-kYh0_q-2ilQW4vVMj5k5oQjIY6tAJKAFEhDqwdjsuOclxym62QcjoZr7GhQstl8645ABL67WGNqORauCZO_ojg",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJq4NrUBYpQg0RdR-e6JsLrcI",
+         "plus_code" : {
+            "compound_code" : "F888+X5 Madrid",
+            "global_code" : "8CGRF888+X5"
+         },
+         "rating" : 3.5,
+         "reference" : "ChIJq4NrUBYpQg0RdR-e6JsLrcI",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 35
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle del Prof. Aranguren, 5, 28040 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4491512,
+               "lng" : -3.7353041
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.45054292989272,
+                  "lng" : -3.733913820107277
+               },
+               "southwest" : {
+                  "lat" : 40.44784327010728,
+                  "lng" : -3.736613479892721
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "6bbed1bbf52b98248a7a26f9b10a28628b4e908d",
+         "name" : "UCM Biblioteca de Geografía e Historia",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 1848,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115495741047617959784\"\u003eCarlos González-Cela\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAiN1JMmjepmNcJ3lK-frMyNgLo1M_P-eGo3A5Crsyqr0qGam_boFGAOoKBXWON6eVnJnEGJWKTj9GMVH4rQbwy9aIYQw5VFb4ODOCoItbqWmnBz-R5gbQizcVjSJHnmRiEhAMtDd0m52jM-hlf6YU1Q1VGhSj7_R3J7xCXYImvqhnyOJs-H6T0w",
+               "width" : 3242
+            }
+         ],
+         "place_id" : "ChIJR9dfsS0oQg0RHwMEceBBtww",
+         "plus_code" : {
+            "compound_code" : "C7X7+MV Madrid",
+            "global_code" : "8CGRC7X7+MV"
+         },
+         "rating" : 4,
+         "reference" : "ChIJR9dfsS0oQg0RHwMEceBBtww",
+         "types" : [ "library", "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 19
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Av. de Logroño, 179, 28042 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.46076480000001,
+               "lng" : -3.5937682
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.46215937989273,
+                  "lng" : -3.592320370107277
+               },
+               "southwest" : {
+                  "lat" : 40.45945972010728,
+                  "lng" : -3.595020029892721
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "9eb68207fd48f7c3d0d17db2e4158ea7f98dfe73",
+         "name" : "Biblioteca Pública Municipal Gloria Fuertes",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 1080,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111063052734457692981\"\u003ePilar RE/MAX Infinity\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAI_koEmnmRvtye8-twnoZTjF8aW9HrxZW9tX_vrsyVr0PPFsJ086POjZMwHBPvok_hHtRM56T0gQi3dQUvJ1e9OEtiz-7TQMNkI21o2siCY0lFTqUfZv-3o1flQWpqWffEhCQA6VYpiNGV8MB3nEzQdNcGhQJX2S68d1hLSOWVUk1qvbYpFZbiQ",
+               "width" : 1920
+            }
+         ],
+         "place_id" : "ChIJWfeDTDIuQg0RXPjSB566rx8",
+         "plus_code" : {
+            "compound_code" : "FC64+8F Madrid",
+            "global_code" : "8CGRFC64+8F"
+         },
+         "rating" : 3.5,
+         "reference" : "ChIJWfeDTDIuQg0RXPjSB566rx8",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 32
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Francisco Tomás y Valiente, 3, 28049 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.54441449999999,
+               "lng" : -3.6978873
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.54571777989272,
+                  "lng" : -3.696509620107279
+               },
+               "southwest" : {
+                  "lat" : 40.54301812010728,
+                  "lng" : -3.699209279892723
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "4e54bacaf7d4e816d9d0ee2234cc1d78d0a55738",
+         "name" : "Biblioteca de Educación de la UAM",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 1365,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118408356836157284297\"\u003eBiblioteca de Educación de la UAM\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAASsA7e61cKpSh63M7otocyXb2AnIC_uDeLPVf-pU89oJGOPxqD-gcqahxzN_qpJqmoAL7jmRWnclKRkxkzXFF0icVeSJEcflyd2q7LPFIU-_i-pR-JkpEUx4Ah-fi1rv6EhCUaFZAMIenQqbFryzB48r8GhT-h75570JQ1CV_JUjd6WBzWHYtsg",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJvdCLWAMrQg0RkzCMEahktY8",
+         "plus_code" : {
+            "compound_code" : "G8V2+QR Madrid",
+            "global_code" : "8CGRG8V2+QR"
+         },
+         "rating" : 0,
+         "reference" : "ChIJvdCLWAMrQg0RkzCMEahktY8",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Freud, 3, 28049 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.5433768,
+               "lng" : -3.6995846
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.54452172989272,
+                  "lng" : -3.698042870107277
+               },
+               "southwest" : {
+                  "lat" : 40.54182207010727,
+                  "lng" : -3.700742529892721
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "abb1de6fbb0678d1747e802b8a5621cddc369920",
+         "name" : "Biblioteca de Humanidades",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 1080,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109451856207012129029\"\u003eRodrigo Cobos\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAP7ZS592nghvDJ3rs8onq0rawnkRUQjWVclRU3WEznvi4EXl3wAA7a5TT_o8wQa9mvfAIt2y-1qZ3uIOq8mLp8igdTZ-OoX9SisBq55cEopdNE6PeHC-TRcpRAbtdWxc7EhA4lIoVfI_HvS7rz0-acZurGhTRoTzdWGffzlDZvwMH9ZjyaMRsAw",
+               "width" : 1920
+            }
+         ],
+         "place_id" : "ChIJY5RNEAMrQg0RgcCUi9_pqHM",
+         "plus_code" : {
+            "compound_code" : "G8V2+95 Madrid",
+            "global_code" : "8CGRG8V2+95"
+         },
+         "rating" : 4.7,
+         "reference" : "ChIJY5RNEAMrQg0RgcCUi9_pqHM",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 12
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Francisco Tomás y Valiente, 5, 28049 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.5448723,
+               "lng" : -3.6966067
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.54616922989273,
+                  "lng" : -3.695225220107278
+               },
+               "southwest" : {
+                  "lat" : 40.54346957010728,
+                  "lng" : -3.697924879892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "57073ad6721c185fcf48115ed38b1745016df398",
+         "name" : "Biblioteca de Económicas - UAM",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 700,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101639456981561626247\"\u003eBiblioteca de Económicas - UAM\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA5g-wG7bLpiQWe_EosD_AHze6a0GT_8WBePZrNqusw48xRagoNY6ELMOhVViqso5ONOhzsSx0ThZovgiUgh9IjnyPr5iK4ktak6pXOvu4xad9mqoBwDFLtvNWCoERf2uiEhDTz-PuHCPxet5Q3je8KFtiGhSSEGtKrk-XWtX0liMh0Qdb86iuug",
+               "width" : 1240
+            }
+         ],
+         "place_id" : "ChIJs60XtgQrQg0RVQELvgMPIJ4",
+         "plus_code" : {
+            "compound_code" : "G8V3+W9 Madrid",
+            "global_code" : "8CGRG8V3+W9"
+         },
+         "rating" : 0,
+         "reference" : "ChIJs60XtgQrQg0RVQELvgMPIJ4",
+         "types" : [ "library", "university", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Newton, 28049 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.5465694,
+               "lng" : -3.6893916
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.54769062989271,
+                  "lng" : -3.688297720107278
+               },
+               "southwest" : {
+                  "lat" : 40.54499097010727,
+                  "lng" : -3.690997379892722
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "be5cadf806dc7a8c24f96c8d2d219a93a7d3d8c0",
+         "name" : "Biblioteca de Ciencias",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 1080,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110973277935366687541\"\u003eSofi Um\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAoNHpddaKokI_IF6JkuqTEcxuIxlQ1ny3EDIuQn3O00C7ViVTIBVXEytOE9oQzDqVAp9fl8XCCjR66IFFvOcQG5zobs0dBYa41oq0ojGkIWiXCMjDYXgk29UOI0NxqA3aEhBrmxP1kSHa43wG6x7qpD1KGhSVu--VtOSYQmbnxfTK3yyhm0SbyQ",
+               "width" : 1920
+            }
+         ],
+         "place_id" : "ChIJdS-hzhErQg0RFhSB149Jays",
+         "plus_code" : {
+            "compound_code" : "G8W6+J6 Madrid",
+            "global_code" : "8CGRG8W6+J6"
+         },
+         "rating" : 4.4,
+         "reference" : "ChIJdS-hzhErQg0RFhSB149Jays",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 10
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle Iván Pavlov, 6, 28049 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.5438706,
+               "lng" : -3.692482199999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.54532332989272,
+                  "lng" : -3.691194370107278
+               },
+               "southwest" : {
+                  "lat" : 40.54262367010728,
+                  "lng" : -3.693894029892721
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "5144d274239fcd41199e49530692c53f9917ac78",
+         "name" : "Biblioteca de Psicología",
+         "permanently_closed" : true,
+         "place_id" : "ChIJ5_wIiw8rQg0RRyZBhdD7LcI",
+         "plus_code" : {
+            "compound_code" : "G8V5+G2 Madrid",
+            "global_code" : "8CGRG8V5+G2"
+         },
+         "rating" : 0,
+         "reference" : "ChIJ5_wIiw8rQg0RRyZBhdD7LcI",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 0
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Paseo de Recoletos, 20-22, 28001 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4235049,
+               "lng" : -3.6894324
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.42519642989271,
+                  "lng" : -3.686954050000001
+               },
+               "southwest" : {
+                  "lat" : 40.42249677010727,
+                  "lng" : -3.69203665
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "a60ef498e121dea478e8da610d2c95b96803f2f6",
+         "name" : "Biblioteca Nacional de España",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 3000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100941754369162450225\"\u003eعلي عبد العال\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAA4vp8re4swfR6WOYSwMAq6ce4HzDXZXD1_pYCZ0JjSAXITmIphv2OaVrMTigancc2sJ3ydSq5lunrP-ErMrgnOvpafyNgzKlKW1Wr_WEQLXrPsF2NeoRigWmpPffwQGLPEhBbAMzCIK6hgJDFvSFzdkufGhTfwrl3Jx8YaD5aqiRERVhLDxTpFg",
+               "width" : 4000
+            }
+         ],
+         "place_id" : "ChIJJ5YDfpAoQg0R91MKik12tdU",
+         "plus_code" : {
+            "compound_code" : "C8F6+C6 Madrid",
+            "global_code" : "8CGRC8F6+C6"
+         },
+         "rating" : 4.5,
+         "reference" : "ChIJJ5YDfpAoQg0R91MKik12tdU",
+         "types" : [ "library", "tourist_attraction", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 386
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "formatted_address" : "Calle del Noviciado, 3, 28015 Madrid, España",
+         "geometry" : {
+            "location" : {
+               "lat" : 40.4255383,
+               "lng" : -3.7079317
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 40.42692927989273,
+                  "lng" : -3.706575970107278
+               },
+               "southwest" : {
+                  "lat" : 40.42422962010728,
+                  "lng" : -3.709275629892723
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/civic_building-71.png",
+         "id" : "ad7c668f4f579dde98bb2bfd8d0c68a43652e459",
+         "name" : "UCM Biblioteca Histórica Marqués de Valdecilla",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 1920,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102200616666411725164\"\u003eLinares Dirigiendo\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAvgUIoeYGY2RsTfHTIA8fpXV5bY6dnXbus26JUIBE9sGW97BB-IZZEwR4FlhHGOvJ2eIqL6JQW7nNZxLseeWdpcksYnoQMuNc1cNWG1iQra9wJ-ZSH9ORBywoo93v8QlaEhA5nmTFxCV1Le8XTiBbn-JfGhSNsVw7tLvVFual8OehZclqUiZlVQ",
+               "width" : 1080
+            }
+         ],
+         "place_id" : "ChIJVZF6gGMoQg0RN2of6l9brF8",
+         "plus_code" : {
+            "compound_code" : "C7GR+6R Madrid",
+            "global_code" : "8CGRC7GR+6R"
+         },
+         "rating" : 4.2,
+         "reference" : "ChIJVZF6gGMoQg0RN2of6l9brF8",
+         "types" : [ "library", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 13
+      }
+   ],
+   "status" : "OK"
+}
