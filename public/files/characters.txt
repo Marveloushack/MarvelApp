@@ -1,4 +1,4 @@
-A - Bomb(HAS)
+A-Bomb(HAS)
 A.I.M.
 Aaron Stack
 Abomination(Emil Blonsky)
@@ -14,7 +14,7 @@ Agent X(Nijo)
 Agent Zero
 Agents of Atlas
 Aginar
-Air - Walker(Gabriel Lan)
+Air-Walker(Gabriel Lan)
 Ajak
 Ajaxis
 Akemi
@@ -36,7 +36,7 @@ Amazoness
 American Eagle(Jason Strongbow)
 Amiko
 Amora
-Amphibian(Earth - 712)
+Amphibian(Earth-712)
 Amun
 Ancient One
 Ancient One(Ultimate)
@@ -48,8 +48,8 @@ Anita Blake
 Anne Marie Hoag
 Annihilus
 Anole
-Ant - Man(Eric O'Grady)
-Ant - Man(Scott Lang)
+Ant-Man(Eric O'Grady)
+Ant-Man(Scott Lang)
 Anthem
 Apocalypse
 Apocalypse(Ultimate)
@@ -69,7 +69,7 @@ Arnim Zola
 Arsenic
 Artiee
 Asgardian
-Askew - Tronics
+Askew-Tronics
 Asylum
 Atlas(Team)
 Aurora
@@ -90,7 +90,7 @@ Batroc the Leaper
 Battering Ram
 Beak
 Beast
-Beast(Earth - 311)
+Beast(Earth-311)
 Beast(Ultimate)
 Becatron
 Bedlam
@@ -101,11 +101,11 @@ Ben Parker
 Ben Reilly
 Ben Urich
 Bengal
-Beta - Ray Bill
+Beta-Ray Bill
 Betty Brant
 Betty Ross
 Beyonder
-Bi - Beast
+Bi-Beast
 Big Bertha
 Big Wheel
 Bill Hollister
@@ -173,7 +173,7 @@ Cable
 Cable(Deadpool)
 Cable(Marvel: Avengers Alliance)
 Cable(Ultimate)
-Cable(X - Men: Battle of the Atom)
+Cable(X-Men: Battle of the Atom)
 Calamity
 Caliban
 Callisto
@@ -194,10 +194,10 @@ Captain Britain(Ultimate)
 Captain Cross
 Captain Flint
 Captain Marvel(Carol Danvers)
-Captain Marvel(Genis - Vell)
-Captain Marvel(Mar - Vell)
+Captain Marvel(Genis-Vell)
+Captain Marvel(Mar-Vell)
 Captain Marvel(Monica Rambeau)
-Captain Marvel(Phyla - Vell)
+Captain Marvel(Phyla-Vell)
 Captain Midlands
 Captain Stacy
 Captain Universe
@@ -254,7 +254,7 @@ Count Nefaria
 Countess
 Crimson Crusader
 Crimson Dynamo
-Crimson Dynamo(Iron Man 3 - The Official Game)
+Crimson Dynamo(Iron Man 3-The Official Game)
 Crimson King
 Crossbones
 Crule
@@ -267,7 +267,7 @@ Cuthbert
 Cyber
 Cyclops
 Cyclops(Ultimate)
-Cyclops(X - Men: Battle of the Atom)
+Cyclops(X-Men: Battle of the Atom)
 Cypher
 D'Ken Neramani
 Dagger
@@ -286,7 +286,7 @@ Dargo Ktor
 Dark Avengers
 Dark Beast
 Dark Phoenix
-Dark X - Men
+Dark X-Men
 Darkhawk
 Darkstar
 Darwin
@@ -297,7 +297,7 @@ Dead Girl
 Deadpool
 Deadpool(Deadpool)
 Deadpool(LEGO Marvel Super Heroes)
-Deadpool(X - Men: Battle of the Atom)
+Deadpool(X-Men: Battle of the Atom)
 Death
 Deathbird
 Deathcry
@@ -416,14 +416,14 @@ Franklin Storm
 Freak
 Frightful Four
 Frog Thor
-Frog - Man
+Frog-Man
 Gateway
 Gauntlet(Joseph Green)
 Geiger
 Gene Sailors
 Generation X
 Genesis
-Genis - Vell
+Genis-Vell
 George Stacy(Ultimate)
 Gertrude Yorkes
 Ghost Rider(Daniel Ketch)
@@ -431,8 +431,8 @@ Ghost Rider(Johnny Blaze)
 Ghost Rider(Marvel War of Heroes)
 Giant Girl
 Giant Man
-Giant - dok
-Giant - Man(Ultimate)
+Giant-dok
+Giant-Man(Ultimate)
 Gideon
 Git Hoskins
 Gladiator(Kallark)
@@ -465,7 +465,7 @@ Gwen Stacy(Ultimate)
 H.A.M.M.E.R.
         H.E.R.B.I.E.
         Hairball
-Half - Life(Tony Masterson)
+Half-Life(Tony Masterson)
 Hammerhead
 Hammerhead(Ultimate)
 Hank Pym
@@ -478,7 +478,7 @@ Harrier
 Harry Heck
 Harry Osborn
 Harry Osborn(Ultimate)
-Hate - Monger(Adolf Hitler)
+Hate-Monger(Adolf Hitler)
 Havok
 Hawkeye
 Hawkeye(Kate Bishop)
@@ -516,7 +516,7 @@ Hulk(LEGO Marvel Super Heroes)
 Hulk(Marvel Zombies)
 Hulk(Marvel: Avengers Alliance)
 Hulk(Ultimate)
-Hulk - dok
+Hulk-dok
 Hulk / Bruce Banner(MAA)
 Hulkling
 Human Cannonball
@@ -529,12 +529,12 @@ Humbug
 Husk
 Hussar
 Hydra
-Hydro - Man
-Hyperion(Earth - 712)
-Hypno - Hustler
+Hydro-Man
+Hyperion(Earth-712)
+Hypno-Hustler
 Iceman
 Iceman(Ultimate)
-Iceman(X - Men: Battle of the Atom)
+Iceman(X-Men: Battle of the Atom)
 Ikaris
 Illuminati
 Ilyana Rasputin
@@ -542,7 +542,7 @@ Imp
 Imperfects
 Imperial Guard
 Impossible Man
-In - Betweener
+In-Betweener
 Inertia
 Infant Terrible
 Inhumans
@@ -552,15 +552,15 @@ Invisible Woman
 Invisible Woman(Marvel: Avengers Alliance)
 Invisible Woman(Ultimate)
 Iron Cross Army
-Iron Fist(Bei Bang - Wen)
+Iron Fist(Bei Bang-Wen)
 Iron Fist(Danny Rand)
 Iron Fist(Orson Randall)
 Iron Fist(Quan Yaozu)
 Iron Fist(USM)
-Iron Fist(Wu Ao - Shi)
+Iron Fist(Wu Ao-Shi)
 Iron Lad
 Iron Man
-Iron Man(Iron Man 3 - The Official Game)
+Iron Man(Iron Man 3-The Official Game)
 Iron Man(LEGO Marvel Super Heroes)
 Iron Man(Marvel Heroes)
 Iron Man(Marvel War of Heroes)
@@ -581,7 +581,7 @@ James Buchanan Barnes
 James Howlett
 Jamie Braddock
 Jane Foster
-Janus, the Nega - Man
+Janus, the Nega-Man
 Jasper Sitwell
 Jazinda
 Jean Grey
@@ -613,7 +613,7 @@ Julian Keller
 Junta
 Justice
 Justin Hammer
-Ka - Zar
+Ka-Zar
 Kabuki
 Kang
 Karen O'Malley
@@ -635,7 +635,7 @@ King Cobra
 Kingpin
 Kinsey Walden
 Kitty Pryde
-Kitty Pryde(X - Men: Battle of the Atom)
+Kitty Pryde(X-Men: Battle of the Atom)
 Klaw
 Komodo(Melati Kusuma)
 Korath
@@ -655,7 +655,7 @@ Lady Ursula
 Lady Vermin
 Lake
 Landau
-Lava - Man
+Lava-Man
 Layla Miller
 Leader
 Leech
@@ -705,7 +705,7 @@ M(Monet St.Croix)
 M.O.D.A.M.
         M.O.D.O.G.
         M.O.D.O.K.
-        M.O.D.O.K. (Iron Man 3 - The Official Game)
+        M.O.D.O.K. (Iron Man 3-The Official Game)
 Ma Gnuci
 Mac Gargan
 Mach IV
@@ -730,15 +730,15 @@ Magneto
 Magneto(Age of Apocalypse)
 Magneto(House of M)
 Magneto(Ultimate)
-Magneto(X - Men: Battle of the Atom)
+Magneto(X-Men: Battle of the Atom)
 Magus(Adam Warlock)
 Magus(Technarch)
 Major Mapleleaf
 Makkari
 Malcolm Colcord
-Malice(Earth - 161)
-Man - Thing
-Man - Wolf
+Malice(Earth-161)
+Man-Thing
+Man-Wolf
 Mandarin
 Mandrill
 Mandroid
@@ -790,7 +790,7 @@ Micro / Macro
 Microbe
 Microchip
 Micromax
-Midnight(Earth - 811)
+Midnight(Earth-811)
 Miek
 Mikhail Rasputin
 Millenium Guard
@@ -867,7 +867,7 @@ Network
 New Goblin
 New Mutants
 New Warriors
-New X - Men
+New X-Men
 Newton Destine
 Next Avengers
 Nextwave
@@ -876,7 +876,7 @@ Nick Fury(LEGO Marvel Super Heroes)
 Nick Fury(Ultimate)
 Nico Minoru
 Nicolaos
-Night Nurse(Earth - 9997)
+Night Nurse(Earth-9997)
 Night Thrasher
 Night Thrasher(Dwayne Taylor)
 Nightcrawler
@@ -884,7 +884,7 @@ Nightcrawler(Ultimate)
 Nighthawk
 Nightmare
 Nightshade
-Nine - Fold Daughters of Xao
+Nine-Fold Daughters of Xao
 Nitro
 Nocturne
 Nomad
@@ -912,7 +912,7 @@ Onslaught(Ultimate)
 Oracle
 Ord
 Orphan
-Orphan - Maker
+Orphan-Maker
 Otto Octavius
 Outlaw Kid
 Overlord
@@ -937,7 +937,7 @@ Phantom Reporter
 Phil Coulson(Phil Coulson)
 Phil Sheldon
 Photon
-Phyla - Vell
+Phyla-Vell
 Piledriver
 Pip
 Pixie
@@ -965,7 +965,7 @@ Proteus(Ultimate)
 Proudstar
 Prowler
 Prowler(Rick Lawson)
-Psycho - Man
+Psycho-Man
 Psylocke
 PsyNapse
 Puck
@@ -981,7 +981,7 @@ Purifiers
 Purple Man
 Pyro
 Quake(Daisy Johnson)
-Quasar(Phyla - Vell)
+Quasar(Phyla-Vell)
 Quasar(Wendell Vaughn)
 Quasimodo
 Queen Noir
@@ -1009,7 +1009,7 @@ Red Ghost
 Red Ghost(Ultimate)
 Red Hulk
 Red Hulk(HAS)
-Red She - Hulk
+Red She-Hulk
 Red Shift
 Red Skull
 Red Skull(Albert Malik)
@@ -1038,7 +1038,7 @@ Rogue
 Rogue(Age of Apocalypse)
 Rogue(Deadpool)
 Rogue(Ultimate)
-Rogue(X - Men: Battle of the Atom)
+Rogue(X-Men: Battle of the Atom)
 Roland Deschain
 Romulus
 Ronan
@@ -1094,22 +1094,22 @@ Shadowcat
 Shadowcat(Age of Apocalypse)
 Shadowcat(Ultimate)
 Shadu the Shady
-Shalla - bal
+Shalla-bal
 Shaman
-Shane Yamada - Jones
-Shang - Chi
-Shang - Chi(Ultimate)
-Shanna the She - Devil
+Shane Yamada-Jones
+Shang-Chi
+Shang-Chi(Ultimate)
+Shanna the She-Devil
 Shape
 Shard
 Sharon Carter
 Sharon Ventura
 Shatterstar
 She-Hulk(HAS)
-She - Hulk(Jennifer Walters)
-She - Hulk(Lyra)
-She - Hulk(Marvel War of Heroes)
-She - Hulk(Ultimate)
+She-Hulk(Jennifer Walters)
+She-Hulk(Lyra)
+She-Hulk(Marvel War of Heroes)
+She-Hulk(Ultimate)
 Shen
 Sheva Callister
 Shi'Ar
@@ -1136,7 +1136,7 @@ Silvermane
 Sin
 Sinister Six
 Sir Ram
-Siren(Earth - 93060)
+Siren(Earth-93060)
 Sister Grimm
 Skaar
 Skaar(HAS)
@@ -1163,7 +1163,7 @@ Speed
 Speed Demon
 Speedball(Robert Baldwin)
 Spencer Smythe
-Sphinx(Anath - Na Mut)
+Sphinx(Anath-Na Mut)
 Spider-dok
 Spider-Girl(Anya Corazon)
 Spider-Girl(May Parker)
@@ -1191,7 +1191,7 @@ Spot
 Sprite
 Spyke
 Squadron Sinister
-Squadron Supreme(Earth - 712)
+Squadron Supreme(Earth-712)
 Squirrel Girl
 Stacy X
 Stacy X(Ultimate)
@@ -1211,7 +1211,7 @@ Stephanie de la Spiroza
 Stephen Strange
 Steve Rogers
 Stick
-Stilt - Man(Wibur Day)
+Stilt-Man(Wibur Day)
 Stingray(Walter Newell)
 Stone Men
 Storm
@@ -1222,7 +1222,7 @@ Stranger
 Strong Guy
 Stryfe
 Stryfe(Ultimate)
-Sub - Mariner
+Sub-Mariner
 Sue Storm
 Sugar Man
 Sumo
@@ -1231,8 +1231,8 @@ Sunfire(Age of Apocalypse)
 Sunset Bain
 Sunspot
 Super Hero Squad
-Super - Adaptoid
-Super - Skrull
+Super-Adaptoid
+Super-Skrull
 Supernaut
 Supreme Intelligence
 Surge
@@ -1333,21 +1333,21 @@ Triton
 True Believers
 Turbo
 Tusk
-Two - Gun Kid
+Two-Gun Kid
 Tyger Tiger
 Typhoid Mary
 Tyrannus
-U - Foes
-U - Go Girl
+U-Foes
+U-Go Girl
 U.S.Agent
 Uatu The Watcher
 Ulik
-Ultimate Spider - Man(USM)
+Ultimate Spider-Man(USM)
 Ultimates
 Ultimatum
 Ultimo
-Ultra - Adaptoid
-Ultragirl(Earth - 93060)
+Ultra-Adaptoid
+Ultragirl(Earth-93060)
 Ultron
 Umar
 Unicorn
@@ -1394,7 +1394,7 @@ Wallflower
 Wallop
 Wallow
 War(Abraham Kieros)
-War Machine(Iron Man 3 - The Official Game)
+War Machine(Iron Man 3-The Official Game)
 War Machine(Marvel: Avengers Alliance)
 War Machine(Parnell Jacobs)
 War Machine(Ultimate)
@@ -1435,12 +1435,12 @@ Wolf Cub
 Wolfpack
 Wolfsbane
 Wolfsbane(Age of Apocalypse)
-Wolver - dok
+Wolver-dok
 Wolverine
 Wolverine(LEGO Marvel Super Heroes)
 Wolverine(Marvel War of Heroes)
 Wolverine(Ultimate)
-Wolverine(X - Men: Battle of the Atom)
+Wolverine(X-Men: Battle of the Atom)
 Wonder Man
 Wong
 Wong(Ultimate)
@@ -1461,11 +1461,11 @@ X-Ray(James Darnell)
 X-Statix
 X.S.E.
 Xavin
-Xorn(Kuan - Yin Xorn)
+Xorn(Kuan-Yin Xorn)
 Yellow Claw
 Yellowjacket(Rita DeMara)
 Young Avengers
-Young X - Men
+Young X-Men
 Zaladane
 Zaran
 Zarda
@@ -1476,4 +1476,4 @@ Zodiak
 Zombie(Simon Garth)
 Zuras
 Zzzax
-3 - D Man
+3-D Man

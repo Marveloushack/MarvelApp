@@ -90,5 +90,14 @@ router.post('/user/series', ensureLoggedIn(), (req, res, next) => {
 
 router.get("/charts", (req, res) => res.render("user/charts"));
 
+//Recommended ...
+
+router.get("/smartList", (req, res) => res.render("user/smartList"));
+
+
+router.get("/user/favorites", (req, res) => {
+    res.send(req.user.character_favorites)
+    console.log(req.user.character_favorites)
+});
 
 module.exports = router

@@ -53,6 +53,12 @@ class comicsApi {
         return this.axiosServer.get("/files/characters.txt")
     }
 
+
+    getCharacteresPreferences() {
+        return this.axiosServer.get("/user/favorites")
+    }
+
+
     getAllComics() {
         return this.axiosAPI.get('/v1/public/comics', {
             params: {
