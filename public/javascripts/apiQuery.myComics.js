@@ -1,5 +1,6 @@
 const ComicsAPI = new comicsApi('https://gateway.marvel.com:443');
 
+let characterList = []
 let characters_favorites = []
 let comics_favorites = []
 let series_favorites = []
@@ -8,17 +9,18 @@ window.addEventListener('load', () => {
     document.getElementById('theButton').addEventListener('click', function (event) {
         event.preventDefault()
 
-        ComicsAPI.getAllCharacters()
-            .then(allCharacters => {
-                let characters = allCharacters.data.data.results
-                let characterName = [...characters]
-                let tempCharacter = characterName.map(character => ({
-                    label: character.name, value: character.name
-                }))
+        ComicsAPI.getFileCharacteres()
+            .then(response => {
+                characterList = response.data.split('\n')
+                console.log(characterList)
 
+                let tempCharacter = characterList.map(character => ({
+                    label: character, value: character
+                }))
                 console.log(tempCharacter)
 
                 var input = document.getElementById("theInput-character");
+
                 autocomplete({
                     input: input,
                     fetch: function (text, update) {

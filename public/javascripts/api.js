@@ -49,6 +49,10 @@ class comicsApi {
         })
     }
 
+    getFileCharacteres() {
+        return this.axiosServer.get("/files/characters.txt")
+    }
+
     getAllComics() {
         return this.axiosAPI.get('/v1/public/comics', {
             params: {
@@ -64,7 +68,7 @@ class comicsApi {
         })
     }
 
-    getAllComicsbyRange(characters) {
+    getAllComicsbyRange() {
         return this.axiosAPI.get('/v1/public/comics', {
             params: {
                 limit: 100,
@@ -80,25 +84,21 @@ class comicsApi {
         })
     }
 
-    getAllComicsbycharacter() {
-        return this.axiosAPI.get('/v1/public/comics', {
+    getAllComicsByCharacter(characterId, offSet) {
+        return this.axiosAPI.get(`/v1/public/characters/${characterId}/comics`, {
             params: {
                 limit: 100,
-                dateRange: "2015-01-01,2020-01-01",
+                offset: offSet,
+                dateRange: "2015-01-01,2020-04-01",
                 ts: 1,
                 apikey: "85c8538a62118493c2d1e4338ea2123d",
-                hash: "4c84cd0092ff9166501a8991fded25b7"
-
+                hash: "4c84cd0092ff9166501a8991fded25b7",
                 // ts: apiConfig.ts,
                 // hash: apiConfig.hash,
                 // apikey: apiConfig.apikey
             }
         })
     }
-
-
-
-
     getAllSeries() {
         return this.axiosAPI.get('/v1/public/series', {
             params: {

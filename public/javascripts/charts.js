@@ -1,7 +1,40 @@
+
 const ComicsAPI = new comicsApi('https://gateway.marvel.com:443');
 
 
+let characterList = []
+let selectedCharId = "";
+let pageCount = 2;
+let comicData = [];
+let counter = 0;
+
 window.addEventListener('load', () => {
+
+    ComicsAPI.getFileCharacteres()
+        .then(response => {
+            characterList = response.data.split('\n')
+            console.log(characterList)
+
+            let tempCharacter = characterList.map(character => ({
+                label: character, value: character
+            }))
+            console.log(tempCharacter)
+            var input = document.getElementById("theInput");
+            autocomplete({
+                input: input,
+                fetch: function (text, update) {
+                    text = text.toLowerCase();
+                    var suggestions = tempCharacter.filter(n => n.label.toLowerCase().includes(text))
+                    update(suggestions);
+                },
+                onSelect: function (item) {
+                    input.value = item.label;
+                }
+
+            });
+
+        }).catch(error => console.log('oOh No! Error is: ', error))
+
 
     document.getElementById('theButton').addEventListener('click', function (event) {
         event.preventDefault()
@@ -10,9 +43,10 @@ window.addEventListener('load', () => {
 
         ComicsAPI.getCharacter(name)
             .then(responseFromApi => {
+                selectedCharId = responseFromApi.data.data.results[0].id;
                 const charInfo = responseFromApi.data.data.results[0];
                 console.log(charInfo)
-                printTheChart(charInfo)
+                compareRadialChart(charInfo, 'chart1')
             })
             .catch(err => {
                 console.log("Error while getting the data: ", err);
@@ -22,73 +56,49 @@ window.addEventListener('load', () => {
     document.getElementById('theButton2').addEventListener('click', function (event) {
         event.preventDefault()
 
-        const title = document.querySelector('#theInput2').value;
+        const offset = 0;
+        getComicsByCharacter(selectedCharId, offset)
 
-        ComicsAPI.getAllComics()
+    })
+
+    function getComicsByCharacter(charId, offset) {
+        return ComicsAPI.getAllComicsByCharacter(charId, offset)
             .then(responseFromApi => {
-                const comicInfo = responseFromApi.data.data.results;
-                console.log(comicInfo)
-                printTheChart(comicInfo)
+                comicData = []
+                const results = responseFromApi.data.data.results;
+                comicData = [...comicData, ...responseFromApi.data.data.results];
+                counter += 1;
+                offset += results.limit;
+
+                if (counter < pageCount) {
+                    getComicsByCharacter(charId, offset)
+                } else {
+
+                    const dateInfo = comicData.map(comic => {
+                        return comic.dates.filter(date => date.type == "onsaleDate")
+                            .map(dateData => {
+                                let year = dateData.date.substring(0, 7)
+                                return year
+                            })
+                    })
+
+                    let groupByDates = dateInfo.reduce((result, currentValue) => {
+                        if (result[currentValue[0]]) {
+                            result[currentValue[0]] += 1
+                        } else {
+                            result[currentValue[0]] = 1
+                        }
+                        return result;
+                    }, {})
+                    modelLineChart(groupByDates, 'chart2')
+                }
             })
             .catch(err => {
                 console.log("Error while getting the data: ", err);
-            });
-    })
-
-    document.getElementById('theButton2').addEventListener('click', function (event) {
-        event.preventDefault()
-
-        const title = document.querySelector('#theInput2').value;
-
-        ComicsAPI.getAllComicsbyRange()
-            .then(responseFromApi => {
-                const comicInfo = responseFromApi.data.data.results;
-
-                const dateInfo = comicInfo.map(comic => {
-                    return comic.dates.filter(date => date.type == "onsaleDate")
-                });
-
-                console.log(dateInfo)
-                printTheChart(comicInfo)
             })
-            .catch(err => {
-                console.log("Error while getting the data: ", err);
-            });
-    })
-
-    document.getElementById('theButton2').addEventListener('click', function (event) {
-        event.preventDefault()
-
-        const character= document.querySelector('#theInput2').value;
-
-        ComicsAPI.getAllComicsbyRange(character)
-            .then(responseFromApi => {
-                const comicInfo = responseFromApi.data.data.results;
-
-                const charInfo = comicInfo.map(comic => {
-                    return comic.dates.filter(date => date.type == "onsaleDate")
-                });
-
-                const dateInfo = comicInfo.map(comic => {
-                    return comic.dates.filter(date => date.type == "onsaleDate")
-                });
-
-                console.log(dateInfo)
-                printTheChart(comicInfo)
-            })
-            .catch(err => {
-                console.log("Error while getting the data: ", err);
-            });
-    })
-
-
-
+    }
 })
 
-function printTheChart(characters) {
-    //document.body.classList.add("runing")
-    compareRadialChart(characters, 'chart1')
-}
 function compareRadialChart(characters, id) {
 
     const data = {
@@ -122,6 +132,32 @@ function compareRadialChart(characters, id) {
         }
     }
     new Chart(id, { type: 'polarArea', data })
-
-
 }
+
+function modelLineChart(comicsByDate, id) {
+    const data = {
+        labels: Object.keys(comicsByDate).reverse(),
+        datasets: [
+            {
+                labels: 'Comics',
+                data: Object.values(comicsByDate).reverse(),
+                borderColor: styles.color.solids.map(eachColor => eachColor),
+                backgroundColor: styles.color.alphas.map(eachColor => eachColor),
+                borderWidth: 1
+            }
+        ]
+    }
+    const options = {
+        legend: {
+            position: 'right',
+            labels: {
+                fontColor: '#fff'
+            }
+        }
+    }
+    new Chart(id, { type: "line", data, options })
+}
+
+
+
+console.log(charactersArray)
