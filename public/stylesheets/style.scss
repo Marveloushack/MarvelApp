@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
 }
 
-h1{
+h1 {
   font-weight: 900;
 }
 
@@ -105,21 +105,26 @@ a.button2:hover {
   object-fit: contain;
   width: 100%;
 }
-.glide img{
+
+.glide img {
   object-fit: contain;
   width: 100%;
 }
+
 .glide2 img {
   object-fit: contain;
   width: 100%;
 }
+
 .glide3 img {
   object-fit: contain;
   width: 100%;
 }
+
 .container {
   height: 100vh;
 }
+
 #librariesmap {
   height: 500px;
   width: 100%;
@@ -132,7 +137,7 @@ a.button2:hover {
 
 // PROFILE
 
-.hero_my_comics{
+.hero_my_comics {
   width: 100%;
   height: 400px;
   display: flex;
@@ -141,9 +146,9 @@ a.button2:hover {
   justify-content: center;
 }
 
-#comics_title{
+#comics_title {
   display: flex;
-  color:  red;
+  color: red;
   font-size: 50px;
   font-weight: 900;
   text-align: center;
@@ -151,50 +156,53 @@ a.button2:hover {
   margin-bottom: 50px;
 }
 
-#buttons_comics{
+#buttons_comics {
   height: 50px;
   width: 60px;
   margin-top: 0px;
   margin-bottom: 20px;
 }
-.textInput{
+
+.textInput {
   letter-spacing: 2px;
   font-size: 20px;
   margin-bottom: 50px;
-}input{
+}
+
+input {
   margin-bottom: 10px;
   background: white;
 }
 
-.autocomplete > div:hover:not(.group),
-.autocomplete > div.selected {
-    background: #8080807a;
-    cursor: pointer;
+.autocomplete>div:hover:not(.group),
+.autocomplete>div.selected {
+  background: #8080807a;
+  cursor: pointer;
 }
 
 
-#user-Character{
+#user-Character {
   width: 200px;
   font-weight: 500;
 
 }
 
-#picture-profile{
+#picture-profile {
   width: 100px;
   height: 100px;
 }
 
-#profile-container{
+#profile-container {
   margin-top: 50px;
 }
 
-#safeButton{
+#safeButton {
   height: 50px;
   width: 160px;
   margin-top: 30px;
   margin-bottom: 50px;
   display: block;
-  margin: auto ;
+  margin: auto;
 }
 
 //CHARTS
