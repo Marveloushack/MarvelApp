@@ -1,13 +1,16 @@
 <div class="container-fluid" id="charts">
 
     <main>
-        <h1>My comic charts</h1>
-
-
+        <div class="chart-header">
+            <h1>Characters Data</h1>
+            <p>Search information about your favorites Marvel characters!</p>
+        </div>
         <input id="theInput" class="form-control" type="text" placeholder="Search your favorite character">
-        <button id="theButton" type="button" class="btn btn-secondary">Run </button>
+        <div class="chart-button">
+            <a id="theButton" type="button" class="button1">Run </a>
 
-        <button id="theButton2" type="button" class="btn btn-secondary">Run</button>
+            <a id="theButton2" type="button" class="button1">Run</a>
+        </div>
         <div class="row">
 
             <div class="col-6">
@@ -40,7 +43,7 @@
         </div>
     </main>
 
-</div>
+
 </div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>

@@ -38,6 +38,10 @@ function placeMarker(user) {
       let marker = new google.maps.Marker({
         map: myMap,
         position: center,
+        icon: {
+          url: "/images/marvelapp-pointer.png",
+          scaledSize: new google.maps.Size(30, 50),
+        },
       });
 
       google.maps.event.addListener(marker, "click", function () {

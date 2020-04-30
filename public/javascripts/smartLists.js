@@ -63,13 +63,12 @@ window.addEventListener('load', () => {
                                     console.log("cargo")
                                     let characterRandom = character.data.data.results
                                     let CharacterReccomendedName = characterRandom[0].name
+                                    let CharacterReccomendedId = characterRandom[0].id
                                     let CharacterReccomendedIMG = characterRandom[0].thumbnail.path
                                     let CharacterIMGExtension = characterRandom[0].thumbnail.extension
-
                                     document.querySelector(`.char-img${i}`).src = CharacterReccomendedIMG + "." + CharacterIMGExtension;
                                     document.querySelector(`.char-name${i}`).innerHTML = CharacterReccomendedName;
-
-                                    console.log("CHARACTER RECOMMENDED RANDOM", CharacterReccomendedName)
+                                    document.getElementById(`details${i}`).href = "/details/" + CharacterReccomendedId
                                 })
                                 .catch(error => console.log('oOh No! Error is: ', error))
                             document.querySelector(`.co-img${i}`).src = dateInfo[randomRecom].thumbnail.path + "." + dateInfo[i].thumbnail.extension;

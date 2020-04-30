@@ -1,30 +1,31 @@
 const marvelApi = new apiHandler("https://gateway.marvel.com:443/v1/public");
-characterList=[]
+characterList = [];
 window.addEventListener("load", () => {
+  marvelApi
+    .getFileCharacteres()
+    .then((response) => {
+      characterList = response.data.split("\n");
+      let tempCharacter = characterList.map((character) => ({
+        label: character,
+        value: character,
+      }));
 
-marvelApi.getFileCharacteres()
-        .then(response => {
-            characterList = response.data.split("\n")
-            let tempCharacter = characterList.map(character => ({
-                label: character, value: character
-            }))
-      
-          let input = document.getElementById("character-name");
-          
-            autocomplete({
-                input: input,
-                fetch: function (text, update) {
-                    text = text.toLowerCase();
-                    var suggestions = tempCharacter.filter(n => n.label.toLowerCase().includes(text))
-                    update(suggestions);
-              },
-               
-                onSelect: function (item) {
-                    input.value = item.label;
-                }
-            });
-        }).catch(error => console.log("oOh No! Error is: ", error))
+      let input = document.getElementById("character-name");
 
+      autocomplete({
+        input: input,
+        fetch: function (text, update) {
+          text = text.toLowerCase();
+          var suggestions = tempCharacter.filter((n) => n.label.toLowerCase().includes(text));
+          update(suggestions);
+        },
+
+        onSelect: function (item) {
+          input.value = item.label;
+        },
+      });
+    })
+    .catch((error) => console.log("oOh No! Error is: ", error));
 
   document.getElementById("fetch").addEventListener("click", function (event) {
     event.preventDefault();
@@ -44,4 +45,3 @@ marvelApi.getFileCharacteres()
       .catch((err) => console.log("No fue posible encontrar el personaje " + err));
   });
 });
-

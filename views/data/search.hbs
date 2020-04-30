@@ -1,26 +1,36 @@
-<form>
-    <div class="form-group">
-        <label for="character-name">Search character</label>
-        <input type="text" class="character-name" id="character-name" name="character-name" placeholder="Character name">
-    </div>
-   <div>
-       <button id="fetch">Search</button>
-   </div>
-</form>
+<figure class="headerimg">
+    <h1>Search character</h1>
+</figure>
+
+<div class="container">
+
+   
+    <form class="char-form">
+        <div class="form-group">
+            <label for="character-name">Search character</label>
+            <input type="text" class="character-name" id="character-name" name="character-name"
+                placeholder="Character name">
+                <a id="fetch" class="button2">Search</a>
+        </div>
+        <div>
+           
+        </div>
+    </form>
 
 
 
-<article class="display-info">
-<div class="card" style="width: 20rem;">
-    <img class="char-img" src="" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="char-name">Character Name</h5>
-        <p class="char-description">Character Description.</p>
-        <a href="#" class="button2">Add to Favorites</a>
-        <a href="/details/{{id}}" class="button2" id="details">See Details</a>
-    </div>
+    <article class="display-info">
+        <div class="card" style="width: 20rem;">
+            <img class="char-img" src="" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="char-name">Character Name</h5>
+                <p class="char-description">Character Description.</p>
+                <a href="#" class="button2">Add to Favorites</a>
+                <a href="/details/" class="button2" id="details">See Details</a>
+            </div>
+        </div>
+    </article>
 </div>
-</article>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="text/javascript" src="../../javascripts/apiHandler.js"></script>
 <script type="text/javascript" src="../../javascripts/apiQuery.js"></script>

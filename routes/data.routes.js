@@ -4,18 +4,20 @@ const api = require("marvel-api");
 const { ensureLoggedIn, ensureLoggedOut } = require("connect-ensure-login");
 
 const marvel = api.createClient({
-  publicKey: process.env.PBK,
-  privateKey: process.env.PVK,
+  publicKey: process.env.myPublicKey,
+  privateKey: process.env.myPrivateKey,
 });
 
 router.get("/search", (req, res) => res.render("data/search"));
 router.get("/details/:id", (req, res) => {
+  console.log(req.params.id)
   const charPromise = marvel.characters.find(req.params.id);
-  const comicsPromise = marvel.characters.comics(req.params.id, (limit = 50));
-  const eventsPromise = marvel.characters.events(req.params.id, (limit = 50));
-  const storiesPromise = marvel.characters.series(req.params.id, (limit = 50));
+  const comicsPromise = marvel.characters.comics(req.params.id);
+  const eventsPromise = marvel.characters.events(req.params.id);
+  const storiesPromise = marvel.characters.series(req.params.id);
   Promise.all([charPromise, comicsPromise, eventsPromise, storiesPromise])
-    .then((results) => {
+    .then(results => {
+      console.log(results[0].data)
       res.render("data/details", {
         character: results[0].data,
         comics: results[1].data,

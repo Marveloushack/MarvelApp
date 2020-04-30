@@ -31,6 +31,10 @@ window.onload = () => {
     var marker = new google.maps.Marker({
       map: myMap,
       position: place.geometry.location,
+      icon: {
+        url: "/images/marvelapp-pointer.png",
+        scaledSize: new google.maps.Size(30, 50),
+      },
     });
 
     google.maps.event.addListener(marker, "click", function () {

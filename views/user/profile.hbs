@@ -8,9 +8,9 @@
                     aria-controls="v-pills-home" aria-selected="true"> Account Info</a>
                 <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="/myComics" role="tab"
                     aria-controls="v-pills-profile" aria-selected="false">Favorites</a>
-                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#" role="tab"
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="/socialmap" role="tab"
                     aria-controls="v-pills-messages" aria-selected="false">Social</a>
-                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="" role="tab"
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="/librariesmap" role="tab"
                     aria-controls="v-pills-settings" aria-selected="false">Libraries near me</a>
             </div>
         </div>
@@ -25,21 +25,18 @@
                     <dt>E-MAIL ADDRESS:</dt>
                     <dd>{{user.email}}</dd>
                     <dt>ADDRESS:</dt>
-                    <dd>Calle ...</dd>
+                    <dd>{{user.address}}</dd>
                 </dl>
-                {{!-- {{#if message1}}
-            <div id="message1">{{{message1}}}</div>
-            {{/if}} --}}
                 <p>Please check your inbox for confimation email Click the link in the email to verify your account
                 </p>
 
 
-                <a href="/profile/update" class="btn btn-danger" role="button" aria-pressed="true">UPDATE ACCOUNT</a>
+                <a href="/profile/update" class="button2" role="button" aria-pressed="true">UPDATE ACCOUNT</a>
             </div>
             <hr>
 
 
-            <h3>PREFERENCES | Characters | Comics | Series </h3>
+            <h3>PREFERENCES</h3>
             <hr>
             <div>
                 <dl>
@@ -48,7 +45,7 @@
                     <dd> <strong>Comics: </strong> {{user.comics_favorites}}</dd>
                     <dd> <strong>Series: </strong> {{user.series_favorites}}</dd>
                 </dl>
-                <a href="/myComics" class="btn btn-danger" role="button" aria-pressed="true">UPDATE MY FAVORITES</a>
+                <a href="/myComics" class="button2" role="button" aria-pressed="true">UPDATE MY FAVORITES</a>
             </div>
         </div>
     </div>
