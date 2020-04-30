@@ -34,7 +34,7 @@ router.get("/recommend/characters", ensureLoggedIn(), (req, res) => {
   marvel.comics.find("38978")
     .then((response) => console.log(response.data[0].id));
   // favorites.forEach((elm) => {
-    
+
   // });
 
 });

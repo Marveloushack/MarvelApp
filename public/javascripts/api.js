@@ -58,7 +58,9 @@ class comicsApi {
         return this.axiosServer.get("/user/favorites")
     }
 
-
+    getUserStatus() {
+        return this.axiosServer.get("/user/status")
+    }
     getAllComics() {
         return this.axiosAPI.get('/v1/public/comics', {
             params: {

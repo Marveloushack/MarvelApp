@@ -12,16 +12,17 @@ window.addEventListener('load', () => {
     ComicsAPI.getCharacteresPreferences()
         .then(response => {
             favoriteList = response.data
-            console.log("ESTE ES SIN CERO", favoriteList)
-            console.log("VAlor", favoriteList[0])
-            ComicsAPI.getCharacter(favoriteList[0])
-                .then(character => {
-                    console.log("cargo")
-                    let characterByName = character.data.data.results
-                    selectedCharId = character.data.data.results[0].id;
-                    console.log("CHARACTER", characterByName)
-                })
-                .catch(error => console.log('oOh No! Error is: ', error))
+
+            if (favoriteList.length == 0) {
+                $('#myModal').modal()
+            } else {
+                ComicsAPI.getCharacter(favoriteList[0])
+                    .then(character => {
+                        let characterByName = character.data.data.results
+                        selectedCharId = character.data.data.results[0].id;
+                    })
+                    .catch(error => console.log('oOh No! Error is: ', error))
+            }
         })
         .catch(error => console.log('oOh No! Error is: ', error))
 
@@ -50,7 +51,6 @@ window.addEventListener('load', () => {
                             }
                         })
                             .filter(comic => Object.keys(comic.characters).length > 0)
-                        console.log('ESTA', dateInfo)
 
                         for (let i = 0; i < 4; i++) {
                             let randomRecom = Math.round(Math.random() * ((dateInfo.length - 1) - 0) + 0);
