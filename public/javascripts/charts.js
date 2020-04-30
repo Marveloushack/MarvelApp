@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
                 label: character, value: character
             }))
             console.log(tempCharacter)
-            var input = document.getElementById("theInput");
+            let input = document.getElementById("theInput");
             autocomplete({
                 input: input,
                 fetch: function (text, update) {
