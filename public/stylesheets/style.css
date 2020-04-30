@@ -297,4 +297,36 @@ figure {
 canvas {
   width: 100%; }
 
+.hero_recommmedations {
+  background-image: url(../images/deadpool-img.png);
+  background-repeat: no-repeat;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center; }
+
+h1 {
+  font-size: 60px;
+  color: whitesmoke;
+  padding: 10px; }
+
+button {
+  height: 50px;
+  width: 200px;
+  margin-left: 218px;
+  font-size: 50px;
+  background-color: #0e191b;
+  border: #0e191b; }
+
+.comics_recommedations .card {
+  height: 150px;
+  object-fit: contain;
+  object-position: center; }
+
+.characters_recommedations .card {
+  height: 150px;
+  object-fit: contain;
+  object-position: center; }
+
 /*# sourceMappingURL=style.css.map */

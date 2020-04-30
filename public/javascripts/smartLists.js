@@ -13,13 +13,13 @@ window.addEventListener('load', () => {
         .then(response => {
             favoriteList = response.data
             console.log("ESTE ES SIN CERO", favoriteList)
-            console.log("VAlor", favoriteList[7])
-            ComicsAPI.getCharacter(favoriteList[7])
+            console.log("VAlor", favoriteList[0])
+            ComicsAPI.getCharacter(favoriteList[0])
                 .then(character => {
                     console.log("cargo")
                     let characterByName = character.data.data.results
                     selectedCharId = character.data.data.results[0].id;
-                    console.log(selectedCharId)
+                    console.log("CHARACTER", characterByName)
                 })
                 .catch(error => console.log('oOh No! Error is: ', error))
         })
@@ -55,14 +55,31 @@ window.addEventListener('load', () => {
                         for (let i = 0; i < 4; i++) {
                             let randomRecom = Math.round(Math.random() * ((dateInfo.length - 1) - 0) + 0);
                             console.log('RANDOM', randomRecom)
-                            document.querySelector(`.char-img${i}`).src = dateInfo[randomRecom].thumbnail.path + "." + dateInfo[i].thumbnail.extension;
-                            document.querySelector(`.char-name${i}`).innerHTML = dateInfo[randomRecom].title;
+
+                            let CharacterReccomended = dateInfo[randomRecom].characters[0].name
+                            console.log(CharacterReccomended)
+                            ComicsAPI.getCharacter(CharacterReccomended)
+                                .then(character => {
+                                    console.log("cargo")
+                                    let characterRandom = character.data.data.results
+                                    let CharacterReccomendedName = characterRandom[0].name
+                                    let CharacterReccomendedIMG = characterRandom[0].thumbnail.path
+                                    let CharacterIMGExtension = characterRandom[0].thumbnail.extension
+
+                                    document.querySelector(`.char-img${i}`).src = CharacterReccomendedIMG + "." + CharacterIMGExtension;
+                                    document.querySelector(`.char-name${i}`).innerHTML = CharacterReccomendedName;
+
+                                    console.log("CHARACTER RECOMMENDED RANDOM", CharacterReccomendedName)
+                                })
+                                .catch(error => console.log('oOh No! Error is: ', error))
+                            document.querySelector(`.co-img${i}`).src = dateInfo[randomRecom].thumbnail.path + "." + dateInfo[i].thumbnail.extension;
+                            document.querySelector(`.co-name${i}`).innerHTML = dateInfo[randomRecom].title;
 
                         }
-
-
                     }
+
                 })
+
                 .catch(err => {
                     console.log("Error while getting the data: ", err);
                 })
