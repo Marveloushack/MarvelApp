@@ -2,8 +2,8 @@ let myMap = undefined;
 let infowindow;
 window.onload = () => {
   const placeCenter = {
-    lat: 40.391074,
-    lng: -3.701793,
+    lat: 40.388069,
+    lng: -3.698748,
   };
   let mapOptions = {
     zoom: 15,
@@ -14,7 +14,7 @@ window.onload = () => {
   let request = {
     location: placeCenter,
     radius: "1000",
-    type: ["comic"],
+    type: ["book_store"],
   };
 
   service = new google.maps.places.PlacesService(myMap);
@@ -24,7 +24,6 @@ window.onload = () => {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       for (var i = 0; i < results.length; i++) {
         createMarker(results[i]);
-        console.log(results[i].name);
       }
     }
   }
