@@ -27,11 +27,11 @@
                     <dt>ADDRESS:</dt>
                     <dd>Calle ...</dd>
                 </dl>
-                {{!-- {{#if message1}}
-            <div id="message1">{{{message1}}}</div>
-            {{/if}} --}}
+                {{!-- {{#if user.status}}
                 <p>Please check your inbox for confimation email Click the link in the email to verify your account
                 </p>
+                {{/if}} --}}
+
 
 
                 <a href="/profile/update" class="btn btn-danger" role="button" aria-pressed="true">UPDATE ACCOUNT</a>
@@ -53,3 +53,34 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+<div class="modal" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Pending Email Validation!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Please check your inbox for confimation email Click the link in the email to verify your account</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="../../javascripts/api.js"></script>
+<script type="text/javascript" src="../../javascripts/statusValidation.js"></script>

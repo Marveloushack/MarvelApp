@@ -13,14 +13,12 @@ const User = require("../models/user.model")
 
 const uploadCloud = require('../configs/cloudinary.config.js');
 
-
-
 // User Profile
 
 router.get('/profile', ensureLoggedIn(), (req, res) => {
+    console.log(req.user.status)
     res.render('user/profile', { message: req.flash('error') });
 });
-
 
 // Update Profile
 router.get('/profile/update', (req, res, next) => {
@@ -31,7 +29,6 @@ router.post('/profile/update', ensureLoggedIn(), uploadCloud.single('photo'), (r
 
     const { _id } = req.user
     const { username, email } = req.body
-    console.log('BODY', req.file)
     const tempUsername = username || req.user.username;
     const tempEmail = email || req.user.email;
     const tempURL = req.file ? req.file.url : req.user.photoURL;
@@ -98,6 +95,10 @@ router.get("/smartList", (req, res) => res.render("user/smartList"));
 router.get("/user/favorites", (req, res) => {
     res.send(req.user.character_favorites)
     console.log(req.user.character_favorites)
+});
+
+router.get("/user/status", (req, res) => {
+    res.send(req.user.status)
 });
 
 module.exports = router

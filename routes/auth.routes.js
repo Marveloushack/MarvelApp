@@ -35,8 +35,8 @@ router.post(
       token += characters[Math.floor(Math.random() * characters.length)];
     }
 
-    const { username, password, email,address } = req.body;
-    const filename = req.file.url;
+    const { username, password, email, address } = req.body;
+    const filename = req.file ? req.file.url : "";
     let confirmationCode = token;
 
     if (!username || !password) {

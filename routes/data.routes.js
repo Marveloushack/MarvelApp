@@ -4,8 +4,8 @@ const api = require("marvel-api");
 const { ensureLoggedIn, ensureLoggedOut } = require("connect-ensure-login");
 
 const marvel = api.createClient({
-  publicKey: process.env.PBK,
-  privateKey: process.env.PVK,
+  publicKey: process.env.myPublicKey,
+  privateKey: process.env.myPrivateKey,
 });
 
 router.get("/search", (req, res) => res.render("data/search"));
@@ -32,7 +32,7 @@ router.get("/recommend/characters", ensureLoggedIn(), (req, res) => {
   marvel.comics.find("38978")
     .then((response) => console.log(response.data[0].id));
   // favorites.forEach((elm) => {
-    
+
   // });
 
 });
