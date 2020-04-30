@@ -139,7 +139,7 @@ function modelLineChart(comicsByDate, id) {
         labels: Object.keys(comicsByDate).reverse(),
         datasets: [
             {
-                labels: 'Comics',
+                label: "Comics",
                 data: Object.values(comicsByDate).reverse(),
                 borderColor: styles.color.solids.map(eachColor => eachColor),
                 backgroundColor: styles.color.alphas.map(eachColor => eachColor),

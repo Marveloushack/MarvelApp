@@ -9,6 +9,9 @@ let counter = 0;
 
 window.addEventListener('load', () => {
 
+    $("#comics-Section").hide();
+    $("#characters-Section").hide();
+
     ComicsAPI.getCharacteresPreferences()
         .then(response => {
             favoriteList = response.data
@@ -28,6 +31,7 @@ window.addEventListener('load', () => {
 
     document.getElementById('theButton_smartList').addEventListener('click', function (event) {
         event.preventDefault()
+
         const offset = 0;
         getComicsByCharacter(selectedCharId, offset)
         function getComicsByCharacter(charId, offset) {
@@ -38,6 +42,10 @@ window.addEventListener('load', () => {
                     comicData = [...comicData, ...responseFromApi.data.data.results];
                     counter += 1;
                     offset += results.limit;
+
+
+                    $("#comics-Section").show();
+                    $("#characters-Section").show();
 
                     if (counter < pageCount) {
                         getComicsByCharacter(charId, offset)

@@ -23,25 +23,48 @@
     <section>
         <div class="character-preferences">
             <br>
-            <h5>Selected characteres:</h5>
+            <h4>Selected characters:</h4>
             <hr>
             <br>
             {{!-- <button type="button" class="btn btn-outline-danger"></button> --}}
         </div>
         <div class="comics-preferences">
             <br>
-            <h5>Selected comics:</h5>
+            <h4>Selected comics:</h4>
             <hr><br>
         </div>
         <div class="series-preferences">
             <br>
-            <h5>Selected series:</h5>
-            <hr><br>
+            <h4>Selected series:</h4>
+            <hr>
         </div>
     </section>
-    <a href="/profile" id="user-Character" class="button2">Back</a>
-    <a id="safeButton" type="button" class="button2">Save</a>
+    <div>
+        <a href="/profile" id="user-Character" class="button2">Back</a>
+        <a id="safeButton" type="button" class="button2">Save</a>
+    </div>
 </div>
+
+<div class="modal" id="modal-save" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Done!</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Your selections have been saved!</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>

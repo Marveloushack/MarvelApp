@@ -1,6 +1,9 @@
 const marvelApi = new apiHandler("https://gateway.marvel.com:443/v1/public");
 characterList = [];
 window.addEventListener("load", () => {
+
+  $("#display-info").hide();
+
   marvelApi
     .getFileCharacteres()
     .then((response) => {
@@ -29,10 +32,12 @@ window.addEventListener("load", () => {
 
   document.getElementById("fetch").addEventListener("click", function (event) {
     event.preventDefault();
+
     const charName = document.querySelector(".character-name").value;
     marvelApi
       .getCharacter(charName)
       .then((responseFromApi) => {
+        $("#display-info").show();
         const charInfo = responseFromApi.data.data.results[0];
         document.querySelector(".char-img").src = charInfo.thumbnail.path + ".jpg";
         document.querySelector(".char-name").innerHTML = charInfo.name;

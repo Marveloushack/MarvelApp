@@ -16,6 +16,10 @@ h1 {
   font-size:5em;
 }
 
+#inicio h1{
+  color: red;
+}
+
 h2,
 h3,h4,dt {
   font-weight: 200;
@@ -60,6 +64,7 @@ p{
 .character-name {
   width: 60%;
   margin: 0 20px;
+  font-family: 'Gloria Hallelujah';
 }
 
 .char-form {
@@ -251,6 +256,7 @@ input {
 .autocomplete>div.selected {
   background: #8080807a;
   cursor: pointer;
+  font-family: 'Roboto', sans-serif ;
 }
 
 
@@ -308,6 +314,8 @@ canvas {
   justify-content: center;
   border: 3px solid black;
 }
+
+.textInput{font-family: 'Gloria Hallelujah';}
 
 .see-btn {
   display: flex;

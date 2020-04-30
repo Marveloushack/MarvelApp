@@ -21,18 +21,19 @@ router.get('/profile', ensureLoggedIn(), (req, res) => {
 
 // Update Profile
 router.get('/profile/update', (req, res, next) => {
-  const { username, email, password } = req.user
-  res.render('user/update-account', { username, email, password })
+  const { username, email, address } = req.user
+  res.render('user/update-account', { username, email, address })
 })
 router.post('/profile/update', ensureLoggedIn(), uploadCloud.single('photo'), (req, res, next) => {
 
   const { _id } = req.user
-  const { username, email } = req.body
+  const { username, email, address } = req.body
   const tempUsername = username || req.user.username;
+  const tempAddress = address || req.user.address;
   const tempEmail = email || req.user.email;
   const tempURL = req.file ? req.file.url : req.user.photoURL;
 
-  User.findByIdAndUpdate({ _id }, { username: tempUsername, email: tempEmail, photoURL: tempURL }, { new: true })
+  User.findByIdAndUpdate({ _id }, { username: tempUsername, email: tempEmail, photoURL: tempURL, address: tempAddress }, { new: true })
     .then(updateUser => {
       console.log(updateUser)
       res.redirect(`/profile`)
