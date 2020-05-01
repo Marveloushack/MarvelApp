@@ -76,7 +76,6 @@ router.post(
             res.redirect("/profile");
           })
           .catch((err) => {
-            console.log(err);
             res.render("auth/signup", { errorMsg: "User can not be create" });
           });
       })

@@ -1,0 +1,32 @@
+{{#each comic}}
+<figure class="headerimg">
+    <h1>Comic info</h1>
+</figure>
+<div class="container">
+    <div class="row">
+        <div class="col-3 info">
+            <img id="comic" class="card-img" src="{{thumbnail.path}}.jpg">
+        </div>
+        <div class="col-8">
+            <article class="card">
+                <div class="card-body">
+                    <h3 class="card-title"><strong>Title:</strong> {{title}}</h3>
+                    <p class="description"><strong>Description:</strong> {{description}}</p>
+                    <h3>Characters in this comic</h3>
+                    <ul>
+                        {{#each characters.items}}
+                        <li>{{name}}</li>
+                        {{/each}}
+                    </ul>
+                    <h3>Authors</h3>
+                    <ul>
+                        {{#each creators.items}}
+                        <li>{{name}}, who was {{role}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+{{/each}}

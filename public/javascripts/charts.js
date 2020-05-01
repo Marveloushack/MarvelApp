@@ -13,12 +13,12 @@ window.addEventListener('load', () => {
     ComicsAPI.getFileCharacteres()
         .then(response => {
             characterList = response.data.split('\n')
-            console.log(characterList)
+            
 
             let tempCharacter = characterList.map(character => ({
                 label: character, value: character
             }))
-            console.log(tempCharacter)
+            
             let input = document.getElementById("theInput");
             autocomplete({
                 input: input,
@@ -45,7 +45,6 @@ window.addEventListener('load', () => {
             .then(responseFromApi => {
                 selectedCharId = responseFromApi.data.data.results[0].id;
                 const charInfo = responseFromApi.data.data.results[0];
-                console.log(charInfo)
                 compareRadialChart(charInfo, 'chart1')
             })
             .catch(err => {
@@ -159,5 +158,3 @@ function modelLineChart(comicsByDate, id) {
 }
 
 
-
-console.log(charactersArray)

@@ -50,7 +50,6 @@ window.addEventListener('load', () => {
                     if (counter < pageCount) {
                         getComicsByCharacter(charId, offset)
                     } else {
-                        console.log(comicData)
                         const dateInfo = comicData.map(comic => {
                             return {
                                 title: comic.title,
@@ -62,13 +61,13 @@ window.addEventListener('load', () => {
 
                         for (let i = 0; i < 4; i++) {
                             let randomRecom = Math.round(Math.random() * ((dateInfo.length - 1) - 0) + 0);
-                            console.log('RANDOM', randomRecom)
+                        
 
                             let CharacterReccomended = dateInfo[randomRecom].characters[0].name
-                            console.log(CharacterReccomended)
+                            
                             ComicsAPI.getCharacter(CharacterReccomended)
                                 .then(character => {
-                                    console.log("cargo")
+                                    
                                     let characterRandom = character.data.data.results
                                     let CharacterReccomendedName = characterRandom[0].name
                                     let CharacterReccomendedId = characterRandom[0].id

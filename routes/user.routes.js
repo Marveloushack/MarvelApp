@@ -14,10 +14,7 @@ const uploadCloud = require('../configs/cloudinary.config.js');
 
 // User Profile
 
-router.get('/profile', ensureLoggedIn(), (req, res) => {
-  console.log(req.user.status)
-  res.render('user/profile', { message: req.flash('error') });
-});
+router.get('/profile', ensureLoggedIn(), (req, res) => res.render('user/profile', { message: req.flash('error') }));
 
 // Update Profile
 router.get('/profile/update', (req, res, next) => {
@@ -34,16 +31,13 @@ router.post('/profile/update', ensureLoggedIn(), uploadCloud.single('photo'), (r
   const tempURL = req.file ? req.file.url : req.user.photoURL;
 
   User.findByIdAndUpdate({ _id }, { username: tempUsername, email: tempEmail, photoURL: tempURL, address: tempAddress }, { new: true })
-    .then(updateUser => {
-      console.log(updateUser)
-      res.redirect(`/profile`)
-    })
+    .then(updateUser => res.redirect(`/profile`))
     .catch(err => next(err))
 })
 
 // My Comics
 
-router.get("/myComics", (req, res) => res.render("user/myComics"));
+router.get("/mycomics", (req, res) => res.render("user/myComics"));
 
 //POST
 router.post("/user/characters", ensureLoggedIn(), (req, res, next) => {
@@ -52,9 +46,6 @@ router.post("/user/characters", ensureLoggedIn(), (req, res, next) => {
   let tempColletion = [...req.user.character_favorites, ...character_favorites];
 
   User.findByIdAndUpdate({ _id }, { character_favorites: tempColletion })
-    .then((updateUser) => {
-      console.log(updateUser);
-    })
     .catch((err) => next(err));
 });
 
@@ -64,9 +55,6 @@ router.post("/user/comics", ensureLoggedIn(), (req, res, next) => {
   let tempColletion = [...req.user.comics_favorites, ...comics_favorites];
 
   User.findByIdAndUpdate({ _id }, { comics_favorites: tempColletion })
-    .then((updateUser) => {
-      console.log(updateUser);
-    })
     .catch((err) => next(err));
 });
 
@@ -76,9 +64,6 @@ router.post("/user/series", ensureLoggedIn(), (req, res, next) => {
   let tempColletion = [...req.user.series_favorites, ...series_favorites];
 
   User.findByIdAndUpdate({ _id }, { series_favorites: tempColletion })
-    .then((updateUser) => {
-      console.log(updateUser);
-    })
     .catch((err) => next(err));
 });
 
@@ -90,10 +75,7 @@ router.get("/charts", (req, res) => res.render("user/charts"));
 
 router.get("/smartlist", (req, res) => res.render("user/smartList"));
 
-router.get("/user/favorites", (req, res) => {
-  res.send(req.user.character_favorites);
-  console.log(req.user.character_favorites);
-});
+router.get("/user/favorites", (req, res) => res.send(req.user.character_favorites));
 
 router.get("/user/status", (req, res) => {
   res.send(req.user.status)

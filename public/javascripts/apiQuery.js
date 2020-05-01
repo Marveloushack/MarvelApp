@@ -22,7 +22,6 @@ window.addEventListener("load", () => {
           var suggestions = tempCharacter.filter((n) => n.label.toLowerCase().includes(text));
           update(suggestions);
         },
-
         onSelect: function (item) {
           input.value = item.label;
         },

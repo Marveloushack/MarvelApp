@@ -119,12 +119,12 @@ window.addEventListener('load', () => {
                 }))
 
 
-                var input = document.getElementById("theInput-series");
+                let input = document.getElementById("theInput-series");
                 autocomplete({
                     input: input,
                     fetch: function (text, update) {
                         text = text.toLowerCase();
-                        var suggestions = tempSeries.filter(n => n.label.toLowerCase().includes(text))
+                        let suggestions = tempSeries.filter(n => n.label.toLowerCase().includes(text))
                         update(suggestions);
 
                     },

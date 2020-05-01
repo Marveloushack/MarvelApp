@@ -5,7 +5,7 @@ window.onload = () => {
     lng: -3.698748,
   };
   let mapOptions = {
-    zoom: 15,
+    zoom: 10,
     center: placeCenter,
   };
 
@@ -27,9 +27,9 @@ function getUsers() {
 
 function placeMarker(user) {
   let location = user.address;
-  let key= "AIzaSyBVMurTF7q2Y_BtyZgyI6GQ0BDfp_M6gss"
+  let key = "AIzaSyBVMurTF7q2Y_BtyZgyI6GQ0BDfp_M6gss"
   axios
-    .get("https://maps.googleapis.com/maps/api/geocode/json?address=" + location + "&key="+key)
+    .get("https://maps.googleapis.com/maps/api/geocode/json?address=" + location + "&key=" + key)
     .then((geoRes) => {
       let latitude = geoRes.data.results[0].geometry.location.lat;
       let longitude = geoRes.data.results[0].geometry.location.lng;

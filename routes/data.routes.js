@@ -28,14 +28,14 @@ router.get("/details/:id", (req, res) => {
     .catch((err) => console.log("Error al mostrar detalles ", err));
 });
 
-router.get("/recommend", (req, res) => res.render("data/recommend"));
-router.get("/recommend/characters", ensureLoggedIn(), (req, res) => {
-  const favorites = req.user.comics_favorites;
-  marvel.comics.find("38978")
-    .then((response) => console.log(response.data[0].id));
-  // favorites.forEach((elm) => {
+router.get("/comics/:id", (req, res) => {
+  marvel.comics
+    .find(req.params.id)
+    .then((selectedComic) => {
+      res.render("data/comicsdetails", { comic: selectedComic.data });
+    })
+    .catch((err) => console.log("Error al mostrar detalles ", err));
+})
 
-  // });
 
-});
 module.exports = router;

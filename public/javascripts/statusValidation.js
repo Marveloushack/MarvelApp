@@ -7,7 +7,6 @@ window.addEventListener('load', () => {
     ComicsAPI.getUserStatus()
         .then(response => {
             userStatus = response.data
-            console.log(userStatus)
             if (userStatus == "Pending Confirmation") {
                 $('#myModal').modal()
             } else {
